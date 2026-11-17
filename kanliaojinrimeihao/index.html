@@ -1,0 +1,1055 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>看料今日美好生活-生活观察与实用指南</title>
+<meta name="description" content="看料今日美好生活聚焦居家收纳、城市散步、菜市场选购与节气饮食四类日常场景，用可核对的时间、价格与实测记录，整理每周值得关注的更新与判断，帮你在有限预算里把日子过得更有质感。">
+<meta name="keywords" content="看料今日美好生活">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f6b52'/%3E%3Cpath d='M18 44 L32 16 L46 44 Z' fill='none' stroke='%23f3c96b' stroke-width='4'/%3E%3Ccircle cx='32' cy='36' r='5' fill='%23f3c96b'/%3E%3C/svg%3E">
+<style>
+:root{
+  --green:#2f6b52;
+  --green-dark:#204a39;
+  --green-soft:#e6f0ea;
+  --amber:#f3c96b;
+  --amber-deep:#c2922f;
+  --ink:#22201c;
+  --ink-2:#4a463f;
+  --ink-3:#726c62;
+  --paper:#fbf9f4;
+  --paper-2:#f2eee4;
+  --line:#ded7c8;
+  --white:#ffffff;
+  --radius-s:6px;
+  --radius-m:12px;
+  --radius-l:20px;
+  --shadow-s:0 1px 2px rgba(34,32,28,.08);
+  --shadow-m:0 6px 18px rgba(34,32,28,.08);
+  --space-1:6px;
+  --space-2:12px;
+  --space-3:18px;
+  --space-4:26px;
+  --space-5:38px;
+  --space-6:56px;
+  --font-body:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --font-serif:"Songti SC","Noto Serif SC",Georgia,serif;
+  --sticky-h:104px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--sticky-h) + 10px);}
+body{
+  margin:0;
+  font-family:var(--font-body);
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.78;
+  font-size:16px;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{line-height:1.32;margin:0;font-weight:700;}
+p{margin:0 0 14px;}
+a{color:var(--green-dark);text-decoration:none;}
+a:hover{text-decoration:underline;}
+ul,ol{margin:0 0 14px;padding-left:22px;}
+img{max-width:100%;display:block;}
+button{font-family:inherit;cursor:pointer;}
+:focus-visible{outline:3px solid var(--amber-deep);outline-offset:2px;border-radius:4px;}
+
+/* ===== 吸顶公告条 + 页头 ===== */
+.sticky-stack{
+  position:sticky;top:0;z-index:60;
+}
+.notice-bar{
+  background:var(--green-dark);
+  color:#eef6f1;
+  font-size:13.5px;
+  padding:7px 18px;
+  display:flex;gap:14px;align-items:center;justify-content:center;
+  flex-wrap:wrap;
+  text-align:center;
+}
+.notice-bar strong{color:var(--amber);font-weight:700;}
+.notice-bar .dot{opacity:.55;}
+.site-header{
+  background:rgba(251,249,244,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+  box-shadow:var(--shadow-s);
+}
+.header-inner{
+  max-width:1240px;margin:0 auto;
+  padding:10px 20px;
+  display:flex;align-items:center;gap:18px;
+}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+.brand svg{width:36px;height:36px;flex-shrink:0;}
+.brand-text{font-size:19px;font-weight:800;letter-spacing:.5px;color:var(--green-dark);white-space:nowrap;}
+.main-nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:8px;flex:1;}
+.main-nav a{
+  font-size:14.5px;color:var(--ink-2);
+  padding:6px 9px;border-radius:var(--radius-s);
+  white-space:nowrap;
+}
+.main-nav a:hover,.main-nav a.active{background:var(--green-soft);color:var(--green-dark);text-decoration:none;}
+.header-tools{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+.search-wrap{position:relative;}
+.search-wrap input{
+  width:180px;padding:7px 10px;font-size:14px;
+  border:1px solid var(--line);border-radius:var(--radius-s);
+  background:var(--white);color:var(--ink);
+  transition:border-color .2s;
+}
+.search-wrap input:focus{border-color:var(--green);outline:none;}
+.search-result{
+  position:absolute;top:calc(100% + 6px);right:0;
+  width:280px;max-height:300px;overflow-y:auto;
+  background:var(--white);border:1px solid var(--line);
+  border-radius:var(--radius-m);box-shadow:var(--shadow-m);
+  padding:6px;display:none;z-index:70;
+}
+.search-result.show{display:block;}
+.search-result .sr-item{display:block;padding:7px 10px;border-radius:var(--radius-s);font-size:13.5px;color:var(--ink-2);}
+.search-result .sr-item:hover{background:var(--green-soft);text-decoration:none;}
+.search-result .sr-empty{padding:10px;font-size:13.5px;color:var(--ink-3);}
+.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:var(--radius-s);padding:6px 9px;font-size:14px;color:var(--green-dark);background:var(--white);}
+
+/* ===== 首屏 ===== */
+.hero{
+  position:relative;
+  background:
+    radial-gradient(circle at 88% 12%, rgba(243,201,107,.28), transparent 42%),
+    linear-gradient(160deg,#f6f2e6 0%,#eef3ec 60%,#e3ece4 100%);
+  border-bottom:1px solid var(--line);
+  overflow:hidden;
+}
+.hero-inner{
+  max-width:1240px;margin:0 auto;
+  padding:52px 20px 56px;
+  display:grid;grid-template-columns:1.25fr .85fr;gap:40px;align-items:center;
+  position:relative;z-index:2;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;font-weight:600;letter-spacing:1.5px;color:var(--green);
+  background:var(--white);border:1px solid var(--line);
+  padding:4px 12px;border-radius:999px;margin-bottom:16px;
+}
+.hero-eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--amber-deep);}
+.hero h1{
+  font-family:var(--font-serif);
+  font-size:clamp(30px,4.4vw,50px);
+  letter-spacing:1px;
+  color:var(--green-dark);
+  margin-bottom:14px;
+}
+.hero-desc{font-size:16.5px;color:var(--ink-2);max-width:560px;margin-bottom:24px;}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px;}
+.btn{
+  display:inline-block;padding:10px 22px;border-radius:999px;
+  font-size:15px;font-weight:600;border:1px solid transparent;
+  transition:transform .18s, box-shadow .18s, background .18s;
+}
+.btn-primary{background:var(--green);color:#fff;box-shadow:var(--shadow-s);}
+.btn-primary:hover{background:var(--green-dark);text-decoration:none;transform:translateY(-2px);}
+.btn-ghost{background:var(--white);color:var(--green-dark);border-color:var(--line);}
+.btn-ghost:hover{border-color:var(--green);text-decoration:none;transform:translateY(-2px);}
+.hero-stats{display:flex;gap:26px;flex-wrap:wrap;}
+.stat b{display:block;font-size:23px;color:var(--green-dark);line-height:1.2;}
+.stat span{font-size:12.5px;color:var(--ink-3);}
+.hero-visual{position:relative;height:330px;}
+.hero-visual svg{width:100%;height:100%;}
+
+/* ===== 布局 ===== */
+.layout{
+  max-width:1240px;margin:0 auto;
+  padding:46px 20px 20px;
+  display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:46px;
+  align-items:start;
+}
+.main-col{min-width:0;}
+.side-col{position:sticky;top:calc(var(--sticky-h) + 18px);}
+section[id]{scroll-margin-top:calc(var(--sticky-h) + 12px);}
+
+.sec{margin-bottom:var(--space-6);}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:var(--space-3);}
+.sec-head h2{
+  font-size:24px;color:var(--green-dark);
+  padding-left:12px;border-left:4px solid var(--amber);
+}
+.sec-head .sec-note{font-size:13px;color:var(--ink-3);}
+.lead{font-size:15.5px;color:var(--ink-2);margin-bottom:18px;}
+
+/* 概览：非对称组合 */
+.overview{display:grid;grid-template-columns:1.4fr 1fr;gap:18px;}
+.ov-main{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius-l);
+  padding:24px 26px;box-shadow:var(--shadow-s);
+}
+.ov-main h3{font-size:18px;color:var(--green-dark);margin-bottom:10px;}
+.ov-side{display:grid;gap:14px;}
+.ov-mini{
+  background:var(--green-soft);border-radius:var(--radius-m);
+  padding:16px 18px;border:1px solid #d6e5da;
+}
+.ov-mini b{display:block;font-size:15px;color:var(--green-dark);margin-bottom:4px;}
+.ov-mini span{font-size:13.5px;color:var(--ink-2);}
+
+/* 精选卡片网格 */
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.card{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius-m);
+  overflow:hidden;box-shadow:var(--shadow-s);
+  display:flex;flex-direction:column;
+  transition:transform .2s, box-shadow .2s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-m);}
+.card-img{aspect-ratio:16/9;width:100%;object-fit:cover;background:var(--paper-2);}
+.card-body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1;}
+.card-tag{font-size:12px;color:var(--amber-deep);font-weight:700;letter-spacing:.5px;}
+.card-body h3{font-size:16px;color:var(--ink);}
+.card-body p{font-size:13.5px;color:var(--ink-3);margin:0;}
+.card-meta{margin-top:auto;font-size:12px;color:var(--ink-3);padding-top:8px;border-top:1px dashed var(--line);}
+
+/* 最新更新：紧凑列表 */
+.update-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line);}
+.update-list li{
+  display:grid;grid-template-columns:82px 1fr auto;gap:14px;align-items:baseline;
+  padding:13px 4px;border-bottom:1px solid var(--line);
+}
+.update-list time{font-size:13px;color:var(--ink-3);font-variant-numeric:tabular-nums;}
+.update-list a{font-size:15px;color:var(--ink);}
+.update-list .upd-note{font-size:12.5px;color:var(--ink-3);white-space:nowrap;}
+
+/* 分类入口：标签索引 */
+.chip-index{display:flex;flex-wrap:wrap;gap:10px;}
+.chip{
+  display:inline-block;padding:8px 16px;font-size:14px;
+  background:var(--white);border:1px solid var(--line);border-radius:999px;
+  color:var(--ink-2);
+  transition:background .18s,border-color .18s,color .18s;
+}
+.chip:hover{background:var(--green);border-color:var(--green);color:#fff;text-decoration:none;}
+.chip small{opacity:.7;font-size:12px;margin-left:4px;}
+
+/* 深度解析：分栏正文 */
+.deep{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius-l);
+  padding:30px 32px;box-shadow:var(--shadow-s);
+}
+.deep h3{font-size:18.5px;color:var(--green-dark);margin:26px 0 10px;}
+.deep h3:first-of-type{margin-top:4px;}
+.deep p{font-size:15.5px;color:var(--ink-2);}
+.deep blockquote{
+  margin:18px 0;padding:14px 20px;border-left:4px solid var(--amber);
+  background:var(--paper-2);border-radius:0 var(--radius-s) var(--radius-s) 0;
+  font-family:var(--font-serif);font-size:15.5px;color:var(--ink);
+}
+.deep blockquote cite{display:block;font-size:12.5px;color:var(--ink-3);font-style:normal;margin-top:6px;}
+.data-table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:14px;}
+.data-table th,.data-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;}
+.data-table th{background:var(--green-soft);color:var(--green-dark);font-weight:600;}
+.data-table td.num{font-variant-numeric:tabular-nums;}
+
+/* 体验指南：编号步骤 */
+.steps{list-style:none;padding:0;margin:0;display:grid;gap:14px;}
+.steps li{
+  display:grid;grid-template-columns:44px 1fr;gap:16px;
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:16px 18px;
+}
+.step-num{
+  width:36px;height:36px;border-radius:50%;
+  background:var(--green);color:#fff;font-weight:700;
+  display:flex;align-items:center;justify-content:center;font-size:16px;
+}
+.steps h3{font-size:15.5px;margin-bottom:4px;color:var(--ink);}
+.steps p{font-size:14px;color:var(--ink-3);margin:0;}
+
+/* FAQ 折叠 */
+.faq-list{display:grid;gap:10px;}
+details.faq{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:0 18px;
+  transition:box-shadow .2s;
+}
+details.faq[open]{box-shadow:var(--shadow-m);}
+details.faq summary{
+  cursor:pointer;padding:14px 0;font-size:15.5px;font-weight:600;color:var(--ink);
+  list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;
+}
+details.faq summary::-webkit-details-marker{display:none;}
+details.faq summary::after{content:"+";font-size:20px;color:var(--green);font-weight:400;line-height:1;transition:transform .2s;}
+details.faq[open] summary::after{content:"−";}
+details.faq .faq-body{padding:0 0 16px;font-size:14.5px;color:var(--ink-2);border-top:1px dashed var(--line);padding-top:12px;}
+
+/* 评论 */
+.comment-list{display:grid;gap:14px;}
+.comment{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:16px 18px;
+}
+.comment-head{display:flex;align-items:center;gap:10px;margin-bottom:6px;}
+.avatar{width:32px;height:32px;border-radius:50%;background:var(--green-soft);color:var(--green-dark);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0;}
+.comment-head b{font-size:14px;}
+.comment-head span{font-size:12px;color:var(--ink-3);}
+.comment p{font-size:14.5px;margin:0;color:var(--ink-2);}
+.comment .ref{font-size:12.5px;color:var(--green);margin-top:6px;display:inline-block;}
+
+/* 资讯：紧凑双列 */
+.news-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.news-item{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:14px 16px;
+}
+.news-item .n-date{font-size:12px;color:var(--amber-deep);font-weight:700;}
+.news-item h3{font-size:15px;margin:4px 0 4px;}
+.news-item p{font-size:13.5px;color:var(--ink-3);margin:0;}
+
+/* 相关推荐标签 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:10px;}
+.rec-tag{
+  display:inline-block;padding:9px 16px;border-radius:var(--radius-s);
+  background:var(--paper-2);border:1px solid var(--line);
+  font-size:14px;color:var(--ink-2);
+}
+.rec-tag:hover{background:var(--amber);border-color:var(--amber);color:var(--ink);text-decoration:none;}
+
+/* 榜单 */
+.rank-list{list-style:none;padding:0;margin:0;display:grid;gap:8px;}
+.rank-list li{
+  display:grid;grid-template-columns:34px 1fr auto;gap:12px;align-items:center;
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:12px 16px;
+}
+.rank-no{font-weight:800;font-size:16px;color:var(--amber-deep);font-variant-numeric:tabular-nums;}
+.rank-list .r-title{font-size:14.5px;font-weight:600;}
+.rank-list .r-sub{font-size:12.5px;color:var(--ink-3);}
+.rank-list .r-score{font-size:13px;color:var(--green-dark);font-variant-numeric:tabular-nums;white-space:nowrap;}
+
+/* 侧栏 */
+.side-card{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius-m);
+  padding:18px 18px 16px;margin-bottom:18px;
+}
+.side-card h2{font-size:16px;color:var(--green-dark);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line);}
+.side-nav{list-style:none;padding:0;margin:0;display:grid;gap:2px;}
+.side-nav a{
+  display:block;font-size:14px;color:var(--ink-2);padding:6px 10px;border-radius:var(--radius-s);
+  border-left:3px solid transparent;
+}
+.side-nav a:hover{background:var(--green-soft);text-decoration:none;}
+.side-nav a.active{border-left-color:var(--green);background:var(--green-soft);color:var(--green-dark);font-weight:600;}
+.side-quote{font-family:var(--font-serif);font-size:14.5px;color:var(--ink-2);line-height:1.8;}
+.side-quote cite{display:block;font-size:12.5px;color:var(--ink-3);font-style:normal;margin-top:8px;}
+.side-mini-list{list-style:none;padding:0;margin:0;font-size:14px;}
+.side-mini-list li{padding:7px 0;border-bottom:1px dashed var(--line);}
+.side-mini-list li:last-child{border-bottom:none;}
+
+/* 页脚 */
+.site-footer{background:var(--green-dark);color:#dbe8e0;margin-top:20px;}
+.footer-inner{max-width:1240px;margin:0 auto;padding:44px 20px 24px;}
+.footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;margin-bottom:32px;}
+.footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.footer-brand svg{width:32px;height:32px;}
+.footer-brand b{font-size:17px;color:#fff;}
+.footer-pitch{font-size:14px;color:#b6cbbf;max-width:320px;}
+.footer-col h3{font-size:14px;color:var(--amber);margin-bottom:10px;letter-spacing:.5px;}
+.footer-col ul{list-style:none;padding:0;margin:0;}
+.footer-col li{margin-bottom:7px;}
+.footer-col a{font-size:13.5px;color:#cfdfd6;}
+.footer-col a:hover{color:#fff;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.15);padding-top:18px;font-size:12.5px;color:#9fb6a9;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:18px;bottom:24px;z-index:80;
+  width:44px;height:44px;border-radius:50%;
+  background:var(--green);color:#fff;border:none;
+  font-size:18px;box-shadow:var(--shadow-m);
+  opacity:0;pointer-events:none;transform:translateY(8px);
+  transition:opacity .25s,transform .25s;
+}
+.to-top.show{opacity:1;pointer-events:auto;transform:translateY(0);}
+
+/* 平板 */
+@media (max-width:1024px){
+  .layout{grid-template-columns:1fr;gap:30px;}
+  .side-col{position:static;order:2;}
+  .hero-inner{grid-template-columns:1fr;gap:24px;padding:40px 20px;}
+  .hero-visual{height:230px;max-width:440px;}
+  .card-grid{grid-template-columns:1fr 1fr;}
+  .overview{grid-template-columns:1fr;}
+  .footer-top{grid-template-columns:1fr 1fr;}
+  .search-wrap input{width:140px;}
+}
+@media (max-width:860px){
+  .main-nav{display:none;B}
+  .main-nav.open{display:flex;position:absolute;top:100%;left:0;right:0;background:var(--white);border-bottom:1px solid var(--line);padding:10px 16px;flex-direction:column;gap:2px;box-shadow:var(--shadow-m);}
+  .header-inner{position:relative;flex-wrap:wrap;}
+  .menu-btn{display:inline-block;}
+  .header-tools{margin-left:auto;}
+  :root{--sticky-h:150px;}
+}
+/* 手机 */
+@media (max-width:640px){
+  .header-inner{padding:8px 14px;gap:10px;}
+  .brand-text{font-size:16.5px;}
+  .search-wrap input{width:112px;font-size:13px;padding:6px 8px;}
+  .search-result{width:min(280px,calc(100vw - 40px));right:-40px;}
+  .layout{padding:28px 14px 16px;}
+  .hero-inner{padding:30px 14px 34px;}
+  .card-grid{grid-template-columns:1fr;}
+  .news-grid{grid-template-columns:1fr;}
+  .deep{padding:20px 18px;}
+  .update-list li{grid-template-columns:64px 1fr;gap:10px;}
+  .update-list .upd-note{display:none;}
+  .footer-top{grid-template-columns:1fr;gap:22px;}
+  .footer-inner{padding:32px 16px 20px;}
+  .sec-head h2{font-size:20px;}
+  .steps li{grid-template-columns:36px 1fr;gap:12px;padding:14px;}
+  .to-top{right:12px;bottom:16px;width:40px;height:40px;}
+  .notice-bar{font-size:12px;padding:6px 10px;}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *{transition:none !important;animation:none !important;}
+  .card:hover,.btn:hover{transform:none;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-stack">
+  <div class="notice-bar" role="status">
+    <span>11月8日更新：<strong>看料今日美好生活</strong> 冬季菜市场价格表已补全 12 个摊位样本</span>
+    <span class="dot">·</span>
+    <span>本周新增「小户型阳台收纳」实测记录 3 条</span>
+  </div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/#top" aria-label="看料今日美好生活 首页">
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#2f6b52"/>
+          <path d="M18 44 L32 16 L46 44 Z" fill="none" stroke="#f3c96b" stroke-width="4" stroke-linejoin="round"/>
+          <circle cx="32" cy="37" r="5" fill="#f3c96b"/>
+        </svg>
+        <span class="brand-text">看料今日美好生活</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">菜单</button>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#featured">精选推荐</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#channels">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#comments">用户评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#rank">本周榜单</a>
+      </nav>
+      <div class="header-tools">
+        <div class="search-wrap">
+          <input type="search" id="siteSearch" placeholder="搜条目 / 摊位 / 单品" aria-label="站内搜索" autocomplete="off">
+          <div class="search-result" id="searchResult" role="listbox" aria-label="搜索结果"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+  <!-- 首屏 -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="hero-inner">
+      <div>
+        <span class="hero-eyebrow">生活观察 · 每周四更</span>
+        <h1 id="heroTitle">看料今日美好生活</h1>
+        <p class="hero-desc">围绕居家收纳、城市散步、菜市场选购、节气饮食四类高频场景，记录可核对的价格、时间与实测结果。四类场景共 9 个常设栏目，本周在测条目 27 条，全部标注记录日期与样本来源。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#featured">看本周精选</a>
+          <a class="btn btn-ghost" href="/#guide">按步骤动手</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b>9</b><span>常设栏目</span></div>
+          <div class="stat"><b>27</b><span>在测条目</span></div>
+          <div class="stat"><b>12</b><span>菜场摊位样本</span></div>
+          <div class="stat"><b>11-07</b><span>最近一次实地记录</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 420 330" role="img">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ffffff"/>
+              <stop offset="1" stop-color="#eef3ec"/>
+            </linearGradient>
+          </defs>
+          <rect x="14" y="18" width="392" height="294" rx="22" fill="url(#g1)" stroke="#ded7c8"/>
+          <circle cx="330" cy="86" r="42" fill="#f3c96b" opacity=".75"/>
+          <rect x="48" y="70" width="150" height="14" rx="7" fill="#2f6b52" opacity=".85"/>
+          <rect x="48" y="96" width="110" height="10" rx="5" fill="#2f6b52" opacity=".4"/>
+          <rect x="48" y="118" width="132" height="10" rx="5" fill="#2f6b52" opacity=".4"/>
+          <rect x="48" y="158" width="86" height="70" rx="10" fill="#e6f0ea" stroke="#c9dccf"/>
+          <rect x="146" y="158" width="86" height="70" rx="10" fill="#f7efd9" stroke="#e3d4ad"/>
+          <rect x="244" y="158" width="120" height="70" rx="10" fill="#ffffff" stroke="#ded7c8"/>
+          <path d="M60 190 h24 M60 204 h40" stroke="#2f6b52" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+          <path d="M160 214 l16 -34 l16 34" stroke="#c2922f" stroke-width="4" fill="none" stroke-linejoin="round"/>
+          <circle cx="176" cy="207" r="5" fill="#c2922f"/>
+          <path d="M258 200 h44 M258 214 h30" stroke="#726c62" stroke-width="4" stroke-linecap="round"/>
+          <rect x="48" y="248" width="316" height="34" rx="10" fill="#2f6b52" opacity=".92"/>
+          <rect x="62" y="260" width="52" height="10" rx="5" fill="#f3c96b"/>
+          <rect x="128" y="260" width="92" height="10" rx="5" fill="#ffffff" opacity=".55"/>
+          <rect x="236" y="260" width="60" height="10" rx="5" fill="#ffffff" opacity=".35"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="layout">
+    <div class="main-col">
+
+      <!-- 领域概览 -->
+      <section class="sec" id="overview" aria-labelledby="ovTitle">
+        <div class="sec-head">
+          <h2 id="ovTitle">领域概览</h2>
+          <span class="sec-note">四类场景 · 记录口径统一</span>
+        </div>
+        <p class="lead">日常生活的改善多半落在具体物件与动线上：一只收纳筐决定台面能否保持整洁，一段 1.8 公里的散步路线决定晚饭后是否愿意出门。这里追踪的四类场景都有可测量的入口——收纳看占地与取用步数，散步看路线长度与坡度，菜场看单价与称重差，节气饮食看食材替换后的成本变化。</p>
+        <div class="overview">
+          <div class="ov-main">
+            <h3>记录口径：价格、时间、样本怎么标</h3>
+            <p>价格统一记录“每 500 克单价”，称重差用同一台 0.1 克精度厨房秤复称三次取中位数。散步路线长度用手机 GPS 记录，起步点固定在小区北门，避免起点不一致造成误差。收纳实测记录“取用一件物品平均步数”，由同一位记录者连续七天早晚各取三次得出。</p>
+            <p>样本来源分三类：实地走访（标注摊位编号与日期）、家中自测（标注房间面积与人数）、公开资料（标注发布单位与版本）。三类样本不混用统计，避免把一次走访的结论写成普遍规律。11 月 7 日菜市场走访覆盖城西农贸市场 12 个摊位，其中 7 个有完整三次复称记录。</p>
+          </div>
+          <div class="ov-side">
+            <div class="ov-mini">
+              <b>居家收纳</b>
+              <span>小户型台面、阳台、玄关三类空间，重点看占地比与取用步数。</span>
+            </div>
+            <div class="ov-mini">
+              <b>城市散步</b>
+              <span>3 条固定路线，1.6—2.4 公里，记录坡度与休息点数量。</span>
+            </div>
+            <div class="ov-mini">
+              <b>菜市场选购</b>
+              <span>12 个摊位，叶菜、根茎、菌菇三类，复称误差单独标注。</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 精选推荐 -->
+      <section class="sec" id="featured" aria-labelledby="featTitle">
+        <div class="sec-head">
+          <h2 id="featTitle">精选内容推荐</h2>
+          <span class="sec-note">本周编辑挑出 6 条</span>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <img class="card-img" src="https://picsum.photos/seed/kanliao-kitchen-01/640/360" width="640" height="360" loading="lazy" alt="小户型厨房台面收纳筐与调料瓶的摆放">
+            <div class="card-body">
+              <span class="card-tag">居家收纳</span>
+              <h3>小户型厨房台面收纳：三步动线改造</h3>
+              <p>台面从 6 件常用品压到 4 件，取用步数由 3.2 步降到 1.8 步，改造材料费 86 元。</p>
+              <div class="card-meta">11-05 更新 · 自测样本</div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="https://picsum.photos/seed/kanliao-market-02/640/360" width="640" height="360" loading="lazy" alt="农贸市场叶菜摊位上的价签与电子秤">
+            <div class="card-body">
+              <span class="card-tag">菜市场选购</span>
+              <h3>上海青菜价对比：12 个摊位复称记录</h3>
+              <p>单价区间 2.4—4.8 元/500 克，其中 3 个摊位复称高于标称 12—18 克。</p>
+              <div class="card-meta">11-07 实地 · 城西农贸市场</div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="https://picsum.photos/seed/kanliao-walk-03/640/360" width="640" height="360" loading="lazy" alt="傍晚沿河步道散步的行人与路灯">
+            <div class="card-body">
+              <span class="card-tag">城市散步</span>
+              <h3>沿河步道 1.8 公里：坡度与休息点实测</h3>
+              <p>全程 4 个休息点，最大坡度 6.5%，晚饭后走完约 24 分钟。</p>
+              <div class="card-meta">11-04 实测 · 3 次取平均</div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="https://picsum.photos/seed/kanliao-diet-04/640/360" width="640" height="360" loading="lazy" alt="立冬前后餐桌上的萝卜与菌菇汤">
+            <div class="card-body">
+              <span class="card-tag">节气饮食</span>
+              <h3>立冬前一周的萝卜菌菇汤成本账</h3>
+              <p>三人份成本 14.6 元，比上周同类汤品记录低 2.1 元，主要来自菌菇降价。</p>
+              <div class="card-meta">11-03 记录 · 一家三口</div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="https://picsum.photos/seed/kanliao-entry-05/640/360" width="640" height="360" loading="lazy" alt="玄关处鞋柜与挂钩收纳改造">
+            <div class="card-body">
+              <span class="card-tag">居家收纳</span>
+              <h3>玄关 1.2 平方米：挂钩高度调整前后</h3>
+              <p>挂钩下移 14 厘米后，出门取包动作从弯腰改为伸手，单次省 1.4 秒。</p>
+              <div class="card-meta">11-02 自测 · 2 人家庭</div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="https://picsum.photos/seed/kanliao-market-06/640/360" width="640" height="360" loading="lazy" alt="菜市场菌菇摊位的平菇与香菇分类摆放">
+            <div class="card-body">
+              <span class="card-tag">菜市场选购</span>
+              <h3>平菇怎么挑：菌盖边缘与含水率判断</h3>
+              <p>同摊位 3 个时段取样，菌盖边缘内卷的样品含水率低约 9 个百分点。</p>
+              <div class="card-meta">11-06 实地 · 摊主姓陈</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 最新更新 -->
+      <section class="sec" id="updates" aria-labelledby="updTitle">
+        <div class="sec-head">
+          <h2 id="updTitle">最新更新</h2>
+          <span class="sec-note">按记录日期倒序</span>
+        </div>
+        <ul class="update-list">
+          <li><time datetime="2026-11-08">11-08</time><a href="/#featured">冬季菜市场价格表补全 12 个摊位样本</a><span class="upd-note">新增叶菜 4 类</span></li>
+          <li><time datetime="2026-11-07">11-07</time><a href="/#featured">上海青菜价对比复称记录发布</a><span class="upd-note">误差 12—18 克</span></li>
+          <li><time datetime="2026-11-06">11-06</time><a href="/#guide">平菇挑选三时段取样结果</a><span class="upd-note">含水率差 9 个百分点</span></li>
+          <li><time datetime="2026-11-05">11-05</time><a href="/#deep">厨房台面收纳动线改造数据表</a><span class="upd-note">步数 3.2→1.8</span></li>
+          <li><time datetime="2026-11-04">11-04</time><a href="/#featured">沿河步道 1.8 公里坡度实测</a><span class="upd-note">最大坡度 6.5%</span></li>
+          <li><time datetime="2026-11-03">11-03</time><a href="/#faq">立冬萝卜菌菇汤成本记录</a><span class="upd-note">三人份 14.6 元</span></li>
+          <li><time datetime="2026-11-02">11-02</time><a href="/#overview">玄关挂钩高度调整前后对比</a><span class="upd-note">省 1.4 秒/次</span></li>
+        </ul>
+      </section>
+
+      <!-- 分类入口 -->
+      <section class="sec" id="channels" aria-labelledby="chTitle">
+        <div class="sec-head">
+          <h2 id="chTitle">分类入口</h2>
+          <span class="sec-note">9 个常设栏目</span>
+        </div>
+        <div class="chip-index">
+          <a class="chip" href="/#featured">小户型收纳 <small>14</small></a>
+          <a class="chip" href="/#featured">阳台改造 <small>9</small></a>
+          <a class="chip" href="/#featured">玄关动线 <small>7</small></a>
+          <a class="chip" href="/#featured">城市散步路线 <small>11</small></a>
+          <a class="chip" href="/#featured">晚饭后步行 <small>6</small></a>
+          <a class="chip" href="/#featured">菜市场比价 <small>18</small></a>
+          <a class="chip" href="/#featured">菌菇挑选 <small>8</small></a>
+          <a class="chip" href="/#featured">节气饮食成本 <small>12</small></a>
+          <a class="chip" href="/#featured">一人食备菜 <small>10</small></a>
+        </div>
+      </section>
+
+      <!-- 深度解析 -->
+      <section class="sec" id="deep" aria-labelledby="deepTitle">
+        <div class="sec-head">
+          <h2 id="deepTitle">深度解析</h2>
+          <span class="sec-note">主体阅读区 · 约 1400 字</span>
+        </div>
+        <div class="deep">
+          <p>“把台面清空”几乎是所有收纳教程的第一句话。这个说法在 2026 年的小户型里未必成立。10 月中旬到 11 月初，对一间 38 平方米、一厨一卫的两口之家做了 21 天连续记录，结论是：把常用品全部收进柜子，取用步数从 1.8 步涨到 3.4 步，人反而更愿意把东西随手放在台面上，整洁维持时间从平均 5.5 小时降到 2.1 小时。</p>
+
+          <h3>可核对的中段：21 天记录里的三组数字</h3>
+          <p>记录分三个阶段。第一阶段（10 月 14 日—10 月 20 日）台面保留 6 件常用品：电水壶、砧板、油壶、盐罐、常用锅铲、沥水架。记录者每天早晚各清点一次台面物品数量，并记录取用一件物品的步数。三组数据如下。</p>
+          <table class="data-table">
+            <thead>
+              <tr><th>阶段</th><th>台面物品</th><th>取用步数（均值）</th><th>整洁维持时长</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>第一阶段 10-14 至 10-20</td><td class="num">6 件</td><td class="num">1.8 步</td><td class="num">5.5 小时</td></tr>
+              <tr><td>第二阶段 10-21 至 10-27</td><td class="num">2 件</td><td class="num">3.4 步</td><td class="num">2.1 小时</td></tr>
+              <tr><td>第三阶段 10-28 至 11-03</td><td class="num">4 件</td><td class="num">1.9 步</td><td class="num">4.8 小时</td></tr>
+            </tbody>
+          </table>
+          <p>第二阶段把所有物品收进吊柜，取用步数增加 1.6 步，看似不多，但一天重复二十次以上，累计多走约 32 步，且每次都要开柜门、找位置、关门。记录显示，第二阶段的台面物品数量在晚间会回到 5—7 件，说明收纳没有消失，只是推迟到更累的时候完成。</p>
+
+          <h3>说法差异：摊主与买家的“新鲜”不是同一把尺</h3>
+          <p>菜市场里关于“新鲜”的分歧更明显。11 月 7 日在城西农贸市场问询 12 个摊位，摊主判断青菜新鲜的标准集中在“叶片挺立、切口无褐变”，买家更常提到“叶面干爽、没有水珠”。两种标准在雨天会打架：喷过水的青菜叶片更挺，但叶面有水珠，买家反而认为不新鲜。当天 3 号摊位的上海青复称误差 +14 克，摊主解释是“早上喷过水”，这与买家判断的“水珠多”指向同一事实，评价方向却相反。记录里把这类情况单列为“水分争议”，不计入缺斤短两。</p>
+
+          <blockquote>“菜叶挺不挺，跟你什么时候买有关。九点前来，什么都挺。”——城西农贸市场 5 号摊位摊主，11 月 7 日
+            <cite>原话记录，未做删改</cite>
+          </blockquote>
+
+          <h3>规则前后变化：散步路线的坡度数据被重算过</h3>
+          <p>沿河步道 1.8 公里这条路线，10 月版本标注最大坡度 4.2%，11 月 4 日复测后改为 6.5%。差异来自起点选择：10 月从南侧桥头起步，漏掉了北段约 180 米的缓坡；11 月改为小区北门起步，把这段算进去了。同一路线两个数字并存不是矛盾，而是起点不同。发布时统一注明起点，避免读者按旧数字估算体力消耗。</p>
+
+          <h3>推断部分：收纳的收益可能被高估</h3>
+          <p>基于 21 天记录，一个可被反驳的判断是：对两口之家、厨房面积小于 5 平方米的住户，台面保留 4—6 件高频用品，比追求“台面清空”更省时间。这个判断的边界很清楚——只覆盖单次做饭、物品不超过 8 件的场景；如果家里有幼儿或经常三人以上做饭，高频品数量会上升，结论需要重测。另一个限制是记录者只有一人，动作习惯没有交叉验证。</p>
+          <p>与之相对，菜市场比价的收益更稳定：12 个摊位同一天同一品种的单价差最高达到 2.4 元/500 克，按每周买两次、每次 1 斤计算，一个月差出约 19 元，这个数字与记录者体力、习惯无关，只要换摊位就能拿到。</p>
+        </div>
+      </section>
+
+      <!-- 体验指南 -->
+      <section class="sec" id="guide" aria-labelledby="guideTitle">
+        <div class="sec-head">
+          <h2 id="guideTitle">体验指南</h2>
+          <span class="sec-note">以厨房台面为例 · 4 步</span>
+        </div>
+        <p class="lead">不想先读完整记录，可以按下面四步在自己家复现一次。全程约 40 分钟，材料费控制在 100 元以内。</p>
+        <ol class="steps">
+          <li>
+            <span class="step-num">1</span>
+            <div>
+              <h3>连续三天记录台面物品数量</h3>
+              <p>早晚各一次，用手机拍照代替清点，避免凭记忆。三天后看哪些物品出现频率最高，通常是电水壶、砧板、油壶三件。</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <div>
+              <h3>按“步数”而不是“美观”决定去留</h3>
+              <p>取用一件物品需要开柜门、转身或弯腰，都算增加一步。超过两步的常用品，考虑放回台面或移到更近的位置。</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <div>
+              <h3>给台面留出 4—6 件的固定位置</h3>
+              <p>用一只收纳筐圈定范围，筐内物品不叠放。11 月 5 日的改造把调料瓶从 6 瓶减到 3 瓶，腾出的宽度刚好放砧板。</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">4</span>
+            <div>
+              <h3>一周后复测整洁维持时长</h3>
+              <p>从做完饭到台面再次变乱，记录小时数。若低于 3 小时，说明台面物品仍偏少，可以再加回 1—2 件高频品。</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- FAQ -->
+      <section class="sec" id="faq" aria-labelledby="faqTitle">
+        <div class="sec-head">
+          <h2 id="faqTitle">常见问答</h2>
+          <span class="sec-note">按提问频率排序</span>
+        </div>
+        <div class="faq-list">
+          <details class="faq" open>
+            <summary>菜市场买叶菜，复称误差多少算正常？</summary>
+            <div class="faq-body">电子秤本身有 ±2 克的允差，加上菜叶带水，500 克以内差 5—10 克属常见。11 月 7 日 12 个摊位里，9 个复称差在 10 克内，3 个超过 12 克，最高 +18 克。超过 15 克时可以直接要求摊位复称。</div>
+          </details>
+          <details class="faq">
+            <summary>小户型厨房台面，到底留几件东西合适？</summary>
+            <div class="faq-body">两口之家、单次做饭、台面宽度 60 厘米左右，留 4—6 件高频品比较稳。记录里留 2 件时整洁维持 2.1 小时，留 4 件时 4.8 小时，留 6 件时 5.5 小时，再往上增加就开始挤占切菜区。</div>
+          </details>
+          <details class="faq">
+            <summary>平菇菌盖边缘内卷，是不是一定更新鲜？</summary>
+            <div class="faq-body">内卷通常说明采摘后失水少，但要看程度。11 月 6 日在同一摊位三个时段取样，边缘明显内卷的样品含水率比平展的低约 9 个百分点，口感更紧实；完全内卷成球状的反而偏老，菌褶发黄就不要选。</div>
+          </details>
+          <details class="faq">
+            <summary>晚饭后散步，路线多长比较合适？</summary>
+            <div class="faq-body">1.6—2.4 公里、坡度不超过 7%、沿途有 3 个以上休息点，是比较容易坚持的区间。沿河步道 1.8 公里那条路线最大坡度 6.5%，走完约 24 分钟，连续记录三天均未出现中途停下。</div>
+          </details>
+          <details class="faq">
+            <summary>立冬前后用萝卜菌菇煮汤，成本大概多少？</summary>
+            <div class="faq-body">三人份 14.6 元，其中白萝卜 380 克约 1.9 元、平菇 200 克约 4.2 元、香菇 80 克约 3.6 元，其余为调味与燃气。比 10 月最后一周同类记录低 2.1 元，差价主要来自菌菇。</div>
+          </details>
+          <details class="faq">
+            <summary>玄关挂钩装多高才不用弯腰？</summary>
+            <div class="faq-body">以家里最常取包的人站直后手腕高度为基准，挂钩下沿低于该高度 5—8 厘米即可。11 月 2 日的改造把挂钩从 168 厘米降到 154 厘米，取包从弯腰改为伸手，单次省约 1.4 秒。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 用户评论 -->
+      <section class="sec" id="comments" aria-labelledby="cmTitle">
+        <div class="sec-head">
+          <h2 id="cmTitle">用户评论</h2>
+          <span class="sec-note">近期留言 6 条 · 含反对意见</span>
+        </div>
+        <div class="comment-list">
+          <div class="comment">
+            <div class="comment-head"><span class="avatar">程</span><b>程小满</b><span>11-08 09:12</span></div>
+            <p>台面留 4 件这个说法我试了，家里三口人做饭，4 件完全不够，油壶、盐罐、砧板、锅铲一放就没地方切菜。可能得按人口加一件。</p>
+            <a class="ref" href="/#deep">回应：深度解析 · 台面物品数量</a>
+          </div>
+          <div class="comment">
+            <div class="comment-head"><span class="avatar">老</span><b>老周在城西</b><span>11-07 19:40</span></div>
+            <p>3 号摊位那个 +14 克我信，早上八点半路过确实看见在喷水。不过他家菜是当天进的，比隔壁新鲜，多几克水也认了。</p>
+            <a class="ref" href="/#featured">指向：上海青菜价对比</a>
+          </div>
+          <div class="comment">
+            <div class="comment-head"><span class="avatar">林</span><b>林一苇</b><span>11-07 14:05</span></div>
+            <p>沿河步道改起点这事做得对。我按 4.2% 那个版本走过一次，北段那个坡差点没上来，带老人去的一定要看新数字。</p>
+            <a class="ref" href="/#deep">指向：散步路线坡度重算</a>
+          </div>
+          <div class="comment">
+            <div class="comment-head"><span class="avatar">阿</span><b>阿默</b><span>11-06 22:18</span></div>
+            <p>菌菇含水率那组取样只有 3 个时段，样本太少了吧。而且同一摊位不同批次，说服力有限，希望多跑几个摊位。</p>
+            <a class="ref" href="/#featured">指向：平菇挑选记录</a>
+          </div>
+          <div class="comment">
+            <div class="comment-head"><span class="avatar">吴</span><b>吴阿姨</b><span>11-05 11:33</span></div>
+            <p>萝卜菌菇汤 14.6 元这个账算得细，我照着买了一次，实际花了 16 元出头，可能是香菇买贵了。菜谱倒是好用，孩子喝了第二碗。</p>
+            <a class="ref" href="/#faq">指向：立冬汤品成本</a>
+          </div>
+          <div class="comment">
+            <div class="comment-head"><span class="avatar">小</span><b>小唐不加班</b><span>11-04 08:50</span></div>
+            <p>挂钩下移 14 厘米这个建议不错，但 1.4 秒一次真没必要算，不如直接说“不用弯腰”更直观。数据有点过度精确了。</p>
+            <a class="ref" href="/#featured">指向：玄关挂钩调整</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 相关资讯 -->
+      <section class="sec" id="news" aria-labelledby="newsTitle">
+        <div class="sec-head">
+          <h2 id="newsTitle">相关资讯</h2>
+          <span class="sec-note">外部来源与本地记录并列</span>
+        </div>
+        <div class="news-grid">
+          <div class="news-item">
+            <span class="n-date">11-08</span>
+            <h3>城西农贸市场冬季摊位调整通知</h3>
+            <p>市场管理方 11 月 8 日张贴公告，北区 5 个摊位调整至东侧通道，叶菜区集中到 1—6 号，原摊位编号本周内仍可对照。</p>
+          </div>
+          <div class="news-item">
+            <span class="n-date">11-06</span>
+            <h3>沿河步道北段照明维修</h3>
+            <p>市政养护记录显示北段 180 米路灯 11 月 5 日至 11 月 9 日检修，晚间散步建议改走南段，绕行增加约 260 米。</p>
+          </div>
+          <div class="news-item">
+            <span class="n-date">11-05</span>
+            <h3>本地菌菇批发价连续两周回落</h3>
+            <p>批发市场 11 月 5 日报价，平菇每 500 克 3.8 元，较 10 月 22 日的 4.6 元下降 0.8 元，零售端反应约滞后三到五天。</p>
+          </div>
+          <div class="news-item">
+            <span class="n-date">11-03</span>
+            <h3>社区共享储物柜试运行</h3>
+            <p>两个小区 11 月 1 日起在门厅设置共享储物柜，每格 0.12 立方米，试点期免费用 30 天，登记需提供门牌号。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section class="sec" id="rec" aria-labelledby="recTitle">
+        <div class="sec-head">
+          <h2 id="recTitle">相关推荐</h2>
+          <span class="sec-note">按主题接近度排列</span>
+        </div>
+        <div class="rec-tags">
+          <a class="rec-tag" href="/#deep">厨房台面收纳动线</a>
+          <a class="rec-tag" href="/#featured">上海青菜价复称</a>
+          <a class="rec-tag" href="/#guide">平菇挑选三时段取样</a>
+          <a class="rec-tag" href="/#featured">沿河步道坡度实测</a>
+          <a class="rec-tag" href="/#faq">立冬萝卜菌菇汤成本</a>
+          <a class="rec-tag" href="/#featured">玄关挂钩高度调整</a>
+          <a class="rec-tag" href="/#news">城西农贸市场摊位调整</a>
+          <a class="rec-tag" href="/#overview">复称误差记录口径</a>
+        </div>
+      </section>
+
+      <!-- 本周榜单 -->
+      <section class="sec" id="rank" aria-labelledby="rankTitle">
+        <div class="sec-head">
+          <h2 id="rankTitle">本周榜单</h2>
+          <span class="sec-note">按 11 月 2 日至 11 月 8 日阅读与收藏综合</span>
+        </div>
+        <ol class="rank-list">
+          <li><span class="rank-no">1</span><div><div class="r-title">小户型厨房台面收纳：三步动线改造</div><div class="r-sub">居家收纳 · 11-05</div></div><span class="r-score">收藏 412</span></li>
+          <li><span class="rank-no">2</span><div><div class="r-title">上海青菜价对比：12 个摊位复称记录</div><div class="r-sub">菜市场选购 · 11-07</div></div><span class="r-score">收藏 356</span></li>
+          <li><span class="rank-no">3</span><div><div class="r-title">沿河步道 1.8 公里：坡度与休息点实测</div><div class="r-sub">城市散步 · 11-04</div></div><span class="r-score">收藏 298</span></li>
+          <li><span class="rank-no">4</span><div><div class="r-title">立冬前一周的萝卜菌菇汤成本账</div><div class="r-sub">节气饮食 · 11-03</div></div><span class="r-score">收藏 241</span></li>
+          <li><span class="rank-no">5</span><div><div class="r-title">玄关 1.2 平方米：挂钩高度调整前后</div><div class="r-sub">居家收纳 · 11-02</div></div><span class="r-score">收藏 187</span></li>
+        </ol>
+      </section>
+
+    </div>
+
+    <!-- 侧栏 -->
+    <aside class="side-col" aria-label="侧栏导航与推荐">
+      <div class="side-card">
+        <h2>栏目导航</h2>
+        <ul class="side-nav" id="sideNav">
+          <li><a href="/#overview">领域概览</a></li>
+          <li><a href="/#featured">精选内容推荐</a></li>
+          <li><a href="/#updates">最新更新</a></li>
+          <li><a href="/#channels">分类入口</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#comments">用户评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#rec">相关推荐</a></li>
+          <li><a href="/#rank">本周榜单</a></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h2>记录者说</h2>
+        <div class="side-quote">
+          “一次走访最多说明那一天、那个摊位。把日期和摊位号写清楚，比下结论重要。”
+          <cite>—— 菜市场复称记录者，11 月 7 日</cite>
+        </div>
+      </div>
+      <div class="side-card">
+        <h2>近三天条目</h2>
+        <ul class="side-mini-list">
+          <li><a href="/#featured">冬季菜市场价格表补全</a><br><span style="font-size:12px;color:var(--ink-3)">11-08 · 12 个摊位</span></li>
+          <li><a href="/#featured">上海青复称误差记录</a><br><span style="font-size:12px;color:var(--ink-3)">11-07 · +12 至 +18 克</span></li>
+          <li><a href="/#guide">平菇三时段取样</a><br><span style="font-size:12px;color:var(--ink-3)">11-06 · 含水率差 9%</span></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#204a39"/>
+            <path d="M18 44 L32 16 L46 44 Z" fill="none" stroke="#f3c96b" stroke-width="4" stroke-linejoin="round"/>
+            <circle cx="32" cy="37" r="5" fill="#f3c96b"/>
+          </svg>
+          <b>看料今日美好生活</b>
+        </div>
+        <p class="footer-pitch">用日期、价格和复称数据记录日常琐事，给愿意动手的人一份能对照着做的清单。</p>
+      </div>
+      <div class="footer-col">
+        <h3>居家收纳</h3>
+        <ul>
+          <li><a href="/#featured">小户型收纳</a></li>
+          <li><a href="/#featured">阳台改造</a></li>
+          <li><a href="/#featured">玄关动线</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>菜场与散步</h3>
+        <ul>
+          <li><a href="/#featured">菜市场比价</a></li>
+          <li><a href="/#featured">菌菇挑选</a></li>
+          <li><a href="/#featured">城市散步路线</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>阅读与参与</h3>
+        <ul>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#comments">用户评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#rank">本周榜单</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>页面内容含示例条目：价格、摊位编号与实测数据均为记录样本，实际以当日现场为准。</span>
+      <span>更新于 2026-11-08 · © 2026 看料今日美好生活</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  // 搜索
+  var input = document.getElementById('siteSearch');
+  var result = document.getElementById('searchResult');
+  var index = [
+    {t:'小户型厨房台面收纳动线', u:'/#deep'},
+    {t:'上海青菜价对比 12 个摊位', u:'/#featured'},
+    {t:'平菇挑选三时段取样', u:'/#guide'},
+    {t:'沿河步道 1.8 公里坡度实测', u:'/#featured'},
+    {t:'立冬萝卜菌菇汤成本', u:'/#faq'},
+    {t:'玄关挂钩高度调整', u:'/#featured'},
+    {t:'城西农贸市场摊位调整', u:'/#news'},
+    {t:'复称误差记录口径', u:'/#overview'},
+    {t:'本周榜单', u:'/#rank'},
+    {t:'用户评论', u:'/#comments'}
+  ];
+  function render(q){
+    var v = q.trim().toLowerCase();
+    if(!v){ result.classList.remove('show'); result.innerHTML=''; return; }
+    var hits = index.filter(function(it){ return it.t.toLowerCase().indexOf(v) > -1; });
+    if(hits.length){
+      result.innerHTML = hits.map(function(it){
+        return '<a class="sr-item" href="'+it.u+'">'+it.t+'</a>';
+      }).join('');
+    } else {
+      result.innerHTML = '<div class="sr-empty">没有找到与“'+q.replace(/[<>&]/g,'')+'”匹配的条目，试试“菜市场”“收纳”或“散步”。</div>';
+    }
+    result.classList.add('show');
+  }
+  input.addEventListener('input', function(){ render(input.value); });
+  input.addEventListener('focus', function(){ if(input.value.trim()) render(input.value); });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.search-wrap')) result.classList.remove('show');
+  });
+  result.addEventListener('click', function(e){
+    if(e.target.closest('.sr-item')){ result.classList.remove('show'); }
+  });
+
+  // 移动端菜单
+  var menuBtn = document.getElementById('menuBtn');
+  var nav = document.getElementById('mainNav');
+  menuBtn.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && window.innerWidth <= 860){
+      nav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+    }
+  });
+
+  // 回到顶部
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 480){ toTop.classList.add('show'); }
+    else { toTop.classList.remove('show'); }
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  // 侧栏滚动高亮
+  var links = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var targets = links.map(function(a){
+    var id = a.getAttribute('href').split('#')[1];
+    return document.getElementById(id);
+  });
+  function highlight(){
+    var pos = window.scrollY + 180;
+    var idx = -1;
+    targets.forEach(function(el, i){
+      if(el && el.offsetTop <= pos) idx = i;
+    });
+    links.forEach(function(a, i){
+      a.classList.toggle('active', i === idx);
+    });
+  }
+  window.addEventListener('scroll', highlight, {passive:true});
+  highlight();
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"看料今日美好生活",
+  "description":"围绕居家收纳、城市散步、菜市场选购、节气饮食四类日常场景的观察与实测记录。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"菜市场买叶菜，复称误差多少算正常？","acceptedAnswer":{"@type":"Answer","text":"电子秤本身有 ±2 克允差，500 克以内差 5—10 克属常见。11 月 7 日 12 个摊位里 9 个复称差在 10 克内，3 个超过 12 克，超过 15 克可直接要求复称。"}},
+    {"@type":"Question","name":"小户型厨房台面，到底留几件东西合适？","acceptedAnswer":{"@type":"Answer","text":"两口之家、单次做饭、台面宽度 60 厘米左右，留 4—6 件高频品较稳。记录中留 2 件时整洁维持 2.1 小时，留 6 件时 5.5 小时。"}},
+    {"@type":"Question","name":"平菇菌盖边缘内卷，是不是一定更新鲜？","acceptedAnswer":{"@type":"Answer","text":"内卷通常说明采摘后失水少。11 月 6 日同一摊位三个时段取样，边缘明显内卷的样品含水率比平展低约 9 个百分点，完全内卷成球状且菌褶发黄的偏老。"}},
+    {"@type":"Question","name":"晚饭后散步，路线多长比较合适？","acceptedAnswer":{"@type":"Answer","text":"1.6—2.4 公里、坡度不超过 7%、沿途有 3 个以上休息点较易坚持。沿河步道 1.8 公里路线最大坡度 6.5%，走完约 24 分钟。"}},
+    {"@type":"Question","name":"立冬前后用萝卜菌菇煮汤，成本大概多少？","acceptedAnswer":{"@type":"Answer","text":"三人份 14.6 元，白萝卜 380 克约 1.9 元、平菇 200 克约 4.2 元、香菇 80 克约 3.6 元，其余为调味与燃气。"}},
+    {"@type":"Question","name":"玄关挂钩装多高才不用弯腰？","acceptedAnswer":{"@type":"Answer","text":"以最常取包的人站直后手腕高度为基准，挂钩下沿低于该高度 5—8 厘米。11 月 2 日改造把挂钩从 168 厘米降到 154 厘米。"}}
+  ]
+}
+</script>
+</body>
+  </html>
