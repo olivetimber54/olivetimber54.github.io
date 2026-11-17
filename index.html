@@ -1,0 +1,1339 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>印象足拍摄影班花-足拍摄影课程与作品点评指南</title>
+<meta name="description" content="印象足拍摄影班花聚焦足部人像摄影课程、班花写真拍摄与作品点评，覆盖构图用光、姿势引导、器材参数、后期调色与学员实拍复盘，适合想拍好脚部细节与人像氛围的摄影爱好者。">
+<meta name="keywords" content="印象足拍摄影班花">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232b2135'/%3E%3Cpath d='M18 44c0-10 5-14 10-14 4 0 6 2 9 2 4 0 9 2 9 8 0 5-4 8-12 8H20c-1 0-2-1-2-4z' fill='%23e7b2a0'/%3E%3Ccircle cx='44' cy='22' r='7' fill='%23f3d9c6'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#241d2b;
+  --ink-soft:#4a4054;
+  --muted:#7a6f84;
+  --line:#e3dbe6;
+  --line-strong:#cfc3d6;
+  --paper:#fbf8f4;
+  --paper-2:#f4eee8;
+  --card:#ffffff;
+  --brand:#5b2d5e;
+  --brand-2:#8e4a63;
+  --accent:#c2703f;
+  --accent-soft:#f6e3d3;
+  --rose:#e7b2a0;
+  --ok:#3f7457;
+  --warn:#a2603b;
+  --radius:14px;
+  --radius-sm:9px;
+  --shadow:0 2px 4px rgba(40,24,48,.05),0 10px 24px rgba(40,24,48,.07);
+  --shadow-sm:0 1px 2px rgba(40,24,48,.06);
+  --stick-h:0px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  font-family:var(--font);
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.75;
+  font-size:16px;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{line-height:1.3;margin:0;font-weight:700;letter-spacing:.01em}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+button{font-family:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+/* ============ 吸顶 ============ */
+.notice{
+  background:linear-gradient(90deg,#3a2440,#5b2d5e 60%,#7a3a57);
+  color:#f7ecf2;
+  font-size:13.5px;
+  position:sticky;
+  top:0;
+  z-index:60;
+}
+.notice-inner{
+  max-width:1200px;margin:0 auto;padding:8px 18px;
+  display:flex;gap:14px;align-items:center;flex-wrap:wrap;
+}
+.notice b{color:#ffd9b8;font-weight:700;letter-spacing:.04em}
+.notice .tag{
+  background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);
+  padding:1px 8px;border-radius:999px;font-size:12px;white-space:nowrap;
+}
+.notice a{color:#ffe7d2}
+
+.site-head{
+  position:sticky;
+  top:32px;
+  z-index:50;
+  background:rgba(251,248,244,.94);
+  -webkit-backdrop-filter:blur(10px);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.head-inner{
+  max-width:1200px;margin:0 auto;padding:10px 18px;
+  display:flex;align-items:center;gap:18px;
+}
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.brand-mark{width:38px;height:38px;flex:0 0 auto}
+.brand-text{font-weight:800;font-size:19px;letter-spacing:.02em;color:var(--brand)}
+.brand-sub{display:block;font-size:11px;font-weight:500;color:var(--muted);letter-spacing:.14em;margin-top:1px}
+.nav{display:flex;gap:2px;flex:1 1 auto;flex-wrap:wrap}
+.nav a{
+  font-size:14px;color:var(--ink-soft);padding:6px 10px;border-radius:8px;
+  text-decoration:none;white-space:nowrap;
+}
+.nav a:hover{background:var(--paper-2);color:var(--brand);text-decoration:none}
+.head-tools{display:flex;align-items:center;gap:8px;flex:0 0 auto}
+.search-wrap{position:relative}
+.search-wrap input{
+  width:168px;padding:7px 10px 7px 30px;border-radius:999px;
+  border:1px solid var(--line-strong);background:#fff;font-size:13.5px;color:var(--ink);
+}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+.search-ico{position:absolute;left:9px;top:50%;transform:translateY(-50%);width:14px;height:14px;pointer-events:none;opacity:.6}
+.search-feedback{
+  position:absolute;top:110%;left:0;right:0;min-width:200px;
+  background:#fff;border:1px solid var(--line-strong);border-radius:10px;
+  box-shadow:var(--shadow);padding:8px 10px;font-size:13px;color:var(--ink-soft);
+  display:none;z-index:70;
+}
+.search-feedback.show{display:block}
+.search-feedback em{color:var(--warn);font-style:normal;font-weight:600}
+.menu-btn{
+  display:none;border:1px solid var(--line-strong);background:#fff;color:var(--brand);
+  padding:7px 12px;border-radius:9px;font-size:14px;cursor:pointer;font-weight:600;
+}
+.btn{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:9px 18px;border-radius:999px;font-size:14.5px;font-weight:600;
+  border:1px solid transparent;cursor:pointer;transition:transform .18s,background .18s,color .18s;
+  text-decoration:none;
+}
+.btn:hover{transform:translateY(-2px);text-decoration:none}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:#47224a;color:#fff}
+.btn-ghost{background:transparent;color:var(--brand);border-color:var(--line-strong)}
+.btn-ghost:hover{background:var(--paper-2);color:var(--brand)}
+
+/* 锚点偏移 */
+section[id],div[id].anchor{scroll-margin-top:112px}
+
+/* ============ 首屏 ============ */
+.hero{
+  position:relative;
+  background:
+    radial-gradient(900px 380px at 88% -60px, rgba(231,178,160,.42), transparent 70%),
+    radial-gradient(600px 320px at 6% 110%, rgba(91,45,94,.14), transparent 70%),
+    linear-gradient(180deg,#fbf8f4 0%,#f6eff0 100%);
+  overflow:hidden;
+}
+.hero-inner{
+  max-width:1200px;margin:0 auto;padding:44px 18px 52px;
+  display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  gap:40px;align-items:center;
+}
+.kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;letter-spacing:.16em;color:var(--brand-2);
+  border:1px solid rgba(142,74,99,.3);background:rgba(255,255,255,.68);
+  padding:4px 12px;border-radius:999px;margin-bottom:16px;font-weight:600;
+}
+.hero h1{
+  font-size:clamp(30px,4.6vw,50px);
+  letter-spacing:.01em;
+  color:#2b2135;
+  margin-bottom:16px;
+}
+.hero h1 .hl{
+  background:linear-gradient(transparent 62%, rgba(194,112,63,.28) 62%);
+  padding:0 2px;
+}
+.hero-lead{font-size:16.5px;color:var(--ink-soft);max-width:34em;margin-bottom:8px}
+.hero-lead b{color:var(--brand);font-weight:700}
+.hero-meta{
+  display:flex;flex-wrap:wrap;gap:10px 22px;margin:18px 0 24px;
+  font-size:13.5px;color:var(--muted);
+}
+.hero-meta span{display:inline-flex;align-items:center;gap:6px}
+.hero-meta i{width:6px;height:6px;border-radius:50%;background:var(--accent);display:inline-block}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.hero-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;
+  border-top:1px dashed var(--line-strong);padding-top:20px;max-width:520px;
+}
+.hero-stats b{display:block;font-size:22px;color:var(--brand);letter-spacing:.02em}
+.hero-stats span{font-size:12.5px;color:var(--muted)}
+.hero-art{position:relative;min-height:340px}
+.hero-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 14px 30px rgba(60,32,70,.14))}
+.art-badge{
+  position:absolute;background:#fff;border:1px solid var(--line);
+  border-radius:12px;padding:8px 12px;font-size:12.5px;color:var(--ink-soft);
+  box-shadow:var(--shadow-sm);
+}
+.art-badge b{color:var(--brand);font-size:14px;display:block}
+.art-badge.a{left:2%;bottom:16%}
+.art-badge.b{right:0;top:8%}
+
+/* ============ 主体布局 ============ */
+.wrap{max-width:1200px;margin:0 auto;padding:0 18px}
+.layout{
+  display:grid;grid-template-columns:minmax(0,1fr) 296px;
+  gap:40px;align-items:start;padding:44px 0 20px;
+}
+.main-col{min-width:0}
+.side-col{min-width:0;position:relative}
+
+.block{margin-bottom:52px}
+.block-head{margin-bottom:20px;display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.block-head h2{font-size:23px;letter-spacing:.01em;color:#2b2135}
+.block-head h2 small{font-size:13px;font-weight:500;color:var(--muted);margin-left:8px;letter-spacing:0}
+.more-link{font-size:13.5px;color:var(--brand-2);white-space:nowrap}
+.lead-note{font-size:14.5px;color:var(--ink-soft);margin-top:6px;max-width:52em}
+
+/* 领域概览 */
+.overview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.ov-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px 18px 16px;box-shadow:var(--shadow-sm);
+}
+.ov-card h3{font-size:15.5px;margin-bottom:8px;color:var(--brand)}
+.ov-card p{font-size:13.8px;color:var(--ink-soft)}
+.ov-card .num{font-size:12px;color:var(--accent);font-weight:700;letter-spacing:.1em}
+
+/* 精选推荐 */
+.featured{display:grid;grid-template-columns:1.18fr .82fr;gap:16px}
+.feat-main{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;
+}
+.feat-main img{width:100%;height:216px;object-fit:cover}
+.feat-body{padding:18px 20px 20px}
+.feat-body .tagline{font-size:12px;color:var(--accent);font-weight:700;letter-spacing:.1em;margin-bottom:6px}
+.feat-body h3{font-size:19px;margin-bottom:8px}
+.feat-body p{font-size:14px;color:var(--ink-soft)}
+.feat-side{display:grid;gap:14px}
+.feat-mini{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 16px;box-shadow:var(--shadow-sm);
+}
+.feat-mini h3{font-size:15px;margin-bottom:6px}
+.feat-mini p{font-size:13.4px;color:var(--ink-soft)}
+.feat-mini .meta{font-size:12px;color:var(--muted);margin-top:8px;display:flex;gap:10px;flex-wrap:wrap}
+.pill{display:inline-block;background:var(--accent-soft);color:#8a4a22;font-size:11.5px;padding:1px 9px;border-radius:999px;font-weight:600}
+
+/* 最新更新 列表 */
+.update-list{display:grid;gap:0;border-top:1px solid var(--line)}
+.update-item{
+  display:grid;grid-template-columns:88px minmax(0,1fr) auto;gap:16px;
+  align-items:baseline;padding:14px 2px;border-bottom:1px solid var(--line);
+}
+.update-item time{font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.update-item h3{font-size:15px;font-weight:600}
+.update-item p{font-size:13.4px;color:var(--ink-soft);margin-top:3px}
+.update-item .kind{font-size:11.5px;color:var(--brand-2);border:1px solid var(--line-strong);padding:1px 9px;border-radius:999px;white-space:nowrap}
+
+/* 分类入口 标签索引 */
+.cat-index{display:flex;flex-wrap:wrap;gap:10px}
+.cat-index a{
+  background:#fff;border:1px solid var(--line-strong);border-radius:10px;
+  padding:9px 14px;font-size:14px;color:var(--ink-soft);
+  display:inline-flex;align-items:center;gap:8px;text-decoration:none;
+  transition:transform .18s,border-color .18s,color .18s;
+}
+.cat-index a:hover{transform:translateY(-2px);border-color:var(--brand-2);color:var(--brand);text-decoration:none}
+.cat-index a em{font-style:normal;font-size:11.5px;color:var(--muted)}
+
+/* 深度解析 */
+.article{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:28px 30px 30px;box-shadow:var(--shadow-sm);
+}
+.article .a-kicker{font-size:12.5px;letter-spacing:.14em;color:var(--brand-2);font-weight:700;margin-bottom:8px}
+.article h2{font-size:25px;margin-bottom:10px}
+.article .a-meta{font-size:12.8px;color:var(--muted);margin-bottom:22px;display:flex;gap:16px;flex-wrap:wrap}
+.article h3{font-size:17.5px;margin:26px 0 10px;color:#33263c;padding-left:12px;border-left:4px solid var(--rose)}
+.article p{font-size:15px;color:#3b3143;margin-bottom:12px}
+.article p b{color:var(--brand)}
+.judge-box{
+  border:1px solid var(--line-strong);border-left:5px solid var(--accent);
+  background:#fdf7f1;border-radius:10px;padding:16px 18px;margin:18px 0;
+}
+.judge-box h4{font-size:14.5px;color:#8a4a22;margin-bottom:8px;letter-spacing:.04em}
+.judge-box ol{list-style:decimal;padding-left:20px;font-size:14.2px;color:#3b3143}
+.judge-box ol li{margin-bottom:6px}
+.cmp-table{width:100%;border-collapse:collapse;font-size:14px;margin:14px 0 6px}
+.cmp-table th,.cmp-table td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+.cmp-table th{background:var(--paper-2);font-weight:600;color:var(--brand);font-size:13.5px}
+.cmp-table td{color:var(--ink-soft)}
+.quote{
+  border-left:4px solid var(--brand-2);background:var(--paper-2);
+  padding:14px 18px;border-radius:0 10px 10px 0;font-size:15px;color:#3b3143;margin:16px 0;
+}
+.quote cite{display:block;font-style:normal;font-size:12.5px;color:var(--muted);margin-top:8px}
+
+/* 体验指南 编号步骤 */
+.steps{display:grid;gap:14px;counter-reset:s}
+.step{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 18px 16px 64px;position:relative;box-shadow:var(--shadow-sm);
+}
+.step::before{
+  counter-increment:s;content:counter(s,decimal-leading-zero);
+  position:absolute;left:16px;top:15px;
+  font-size:15px;font-weight:800;color:var(--brand-2);
+  background:var(--accent-soft);border-radius:9px;padding:4px 8px;line-height:1.2;
+}
+.step h3{font-size:15.5px;margin-bottom:5px}
+.step p{font-size:13.8px;color:var(--ink-soft)}
+.step .spec{font-size:12.5px;color:var(--brand-2);margin-top:6px;font-variant-numeric:tabular-nums}
+
+/* 双栏对照 */
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.panel{border-radius:var(--radius);padding:18px 20px;border:1px solid var(--line)}
+.panel.do{background:#f2f7f3;border-color:#cfe2d5}
+.panel.dont{background:#fbf1ee;border-color:#edd5cc}
+.panel h3{font-size:15.5px;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.panel.do h3{color:var(--ok)}
+.panel.dont h3{color:var(--warn)}
+.panel ul{list-style:none;display:grid;gap:8px}
+.panel li{font-size:13.8px;color:var(--ink-soft);padding-left:16px;position:relative}
+.panel li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:2px;background:currentColor;opacity:.55}
+
+/* FAQ */
+.faq{display:grid;gap:10px}
+.faq details{
+  background:#fff;border:1px solid var(--line);border-radius:12px;
+  padding:0;box-shadow:var(--shadow-sm);overflow:hidden;
+}
+.faq summary{
+  cursor:pointer;padding:14px 44px 14px 18px;font-size:15px;font-weight:600;
+  color:#33263c;position:relative;list-style:none;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";position:absolute;right:16px;top:12px;font-size:20px;color:var(--brand-2);font-weight:400;line-height:1;
+}
+.faq details[open] summary::after{content:"–"}
+.faq details[open] summary{background:var(--paper-2)}
+.faq .ans{padding:12px 18px 16px;font-size:14px;color:var(--ink-soft);border-top:1px solid var(--line)}
+
+/* 评论 */
+.comments{display:grid;gap:12px}
+.cmt{
+  background:#fff;border:1px solid var(--line);border-radius:12px;
+  padding:14px 16px;box-shadow:var(--shadow-sm);
+}
+.cmt-head{display:flex;align-items:center;gap:10px;margin-bottom:6px;flex-wrap:wrap}
+.avatar{
+  width:30px;height:30px;border-radius:50%;flex:0 0 auto;
+  display:grid;place-items:center;font-size:13px;font-weight:700;color:#fff;
+}
+.cmt-name{font-size:13.5px;font-weight:600;color:#33263c}
+.cmt-tag{font-size:11px;color:var(--muted);border:1px solid var(--line);padding:0 7px;border-radius:999px}
+.cmt p{font-size:14px;color:var(--ink-soft)}
+.cmt .ref{font-size:12.5px;color:var(--brand-2);margin-top:6px}
+.cmt-stars{color:var(--accent);font-size:12px;letter-spacing:2px}
+
+/* 资讯 */
+.news-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.news{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 18px;box-shadow:var(--shadow-sm);
+}
+.news .src{font-size:11.5px;color:var(--muted);letter-spacing:.04em;margin-bottom:4px}
+.news h3{font-size:15px;margin-bottom:6px}
+.news p{font-size:13.4px;color:var(--ink-soft)}
+.news .when{font-size:12px;color:var(--brand-2);margin-top:8px;font-variant-numeric:tabular-nums}
+
+/* 相关推荐 标签 */
+.tags-reco{display:flex;flex-wrap:wrap;gap:9px}
+.tags-reco a{
+  font-size:13.5px;background:var(--paper-2);border:1px solid var(--line);
+  color:var(--ink-soft);padding:6px 13px;border-radius:999px;text-decoration:none;
+}
+.tags-reco a:hover{background:var(--accent-soft);border-color:#e2c3a9;color:#7d3f1c;text-decoration:none}
+
+/* 榜单 时间线 */
+.timeline{position:relative;padding-left:26px}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line-strong)}
+.tl-item{position:relative;margin-bottom:18px}
+.tl-item::before{content:"";position:absolute;left:-24px;top:6px;width:11px;height:11px;border-radius:50%;background:#fff;border:3px solid var(--brand-2)}
+.tl-item h3{font-size:15px;margin-bottom:3px}
+.tl-item .date{font-size:12px;color:var(--accent);font-weight:600;letter-spacing:.04em}
+.tl-item p{font-size:13.6px;color:var(--ink-soft);margin-top:4px}
+
+/* 侧栏 */
+.side-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px 18px 16px;box-shadow:var(--shadow-sm);margin-bottom:20px;
+}
+.side-card h3{font-size:14.5px;color:var(--brand);margin-bottom:12px;letter-spacing:.02em}
+.side-nav{display:grid;gap:2px}
+.side-nav a{
+  font-size:13.6px;color:var(--ink-soft);padding:7px 10px;border-radius:8px;
+  border-left:3px solid transparent;text-decoration:none;transition:background .15s,color .15s,border-color .15s;
+}
+.side-nav a:hover{background:var(--paper-2);color:var(--brand);text-decoration:none}
+.side-nav a.active{background:var(--paper-2);color:var(--brand);border-left-color:var(--brand-2);font-weight:600}
+.side-list{display:grid;gap:10px}
+.side-list li{font-size:13.4px;color:var(--ink-soft);padding-left:18px;position:relative}
+.side-list li::before{content:"›";position:absolute;left:4px;color:var(--accent);font-weight:700}
+.side-list a{color:var(--ink-soft)}
+.side-list a:hover{color:var(--brand)}
+.mini-stat{display:flex;justify-content:space-between;font-size:13px;padding:6px 0;border-bottom:1px dashed var(--line)}
+.mini-stat:last-child{border-bottom:0}
+.mini-stat b{color:var(--brand)}
+
+/* 页尾 */
+.site-foot{
+  background:#2b2135;color:#d9cfdf;margin-top:30px;padding:42px 0 26px;
+}
+.foot-inner{max-width:1200px;margin:0 auto;padding:0 18px}
+.foot-top{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:26px;margin-bottom:30px}
+.foot-brand .brand-text{color:#fbeee1;font-size:17px}
+.foot-brand p{font-size:13.2px;color:#b7a9c0;margin-top:10px;max-width:24em}
+.foot-col h4{font-size:13.5px;color:#f6e7ef;margin-bottom:10px;letter-spacing:.06em}
+.foot-col a{display:block;font-size:13.2px;color:#b7a9c0;padding:3px 0;text-decoration:none}
+.foot-col a:hover{color:#ffd9b8;text-decoration:none}
+.foot-bottom{
+  border-top:1px solid rgba(255,255,255,.12);padding-top:18px;
+  font-size:12.4px;color:#9d8fa8;display:flex;gap:14px;justify-content:space-between;flex-wrap:wrap;
+}
+.foot-bottom span{display:inline-block;margin-right:14px}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:20px;bottom:24px;z-index:40;
+  width:44px;height:44px;border-radius:50%;border:1px solid var(--line-strong);
+  background:#fff;color:var(--brand);font-size:18px;cursor:pointer;
+  box-shadow:var(--shadow);display:grid;place-items:center;
+  opacity:0;pointer-events:none;transform:translateY(8px);transition:opacity .2s,transform .2s;
+}
+.to-top.show{opacity:1;pointer-events:auto;transform:none}
+
+mark.hit{background:#ffe9a8;color:#5a3c00;padding:0 2px;border-radius:3px}
+
+/* 响应式 */
+@media (max-width:1000px){
+  .layout{grid-template-columns:minmax(0,1fr);gap:34px}
+  .side-col{order:2}
+  .hero-inner{grid-template-columns:1fr;gap:26px}
+  .hero-art{min-height:0;max-width:520px}
+  .featured{grid-template-columns:1fr}
+  .overview-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .foot-top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .nav{
+    display:none;position:absolute;left:0;right:0;top:100%;
+    background:#fbf8f4;border-bottom:1px solid var(--line);
+    padding:10px 14px 14px;box-shadow:var(--shadow);gap:4px;
+  }
+  .nav.open{display:flex}
+  .nav a{padding:9px 12px;font-size:15px}
+  .head-inner{position:relative;flex-wrap:wrap}
+  .menu-btn{display:inline-block}
+  .search-wrap input{width:132px}
+  .notice-inner{font-size:12.6px}
+  .site-head{top:34px}
+  .article{padding:20px 18px 22px}
+  .overview-grid,.news-grid,.pair{grid-template-columns:1fr}
+  .update-item{grid-template-columns:minmax(0,1fr);gap:2px}
+  .update-item time{order:-1}
+  .hero-stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .hero-stats b{font-size:19px}
+  .foot-top{grid-template-columns:1fr}
+  section[id],div[id].anchor{scroll-margin-top:104px}
+  .to-top{right:14px;bottom:16px;width:40px;height:40px}
+  .art-badge.b{top:0}
+}
+@media (max-width:400px){
+  .wrap,.head-inner,.hero-inner,.foot-inner,.notice-inner{padding-left:13px;padding-right:13px}
+  .search-wrap input{width:104px}
+  .brand-text{font-size:17px}
+  .hero h1{font-size:27px}
+  .cmp-table{font-size:13px}
+  .cmp-table th,.cmp-table td{padding:7px 8px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .btn:hover,.cat-index a:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="notice" id="notice-bar">
+  <div class="notice-inner">
+    <b>印象足拍摄影班花</b>
+    <span class="tag">更新</span>
+    <span>11 月 6 日上线「午后木地板 35mm 实拍复盘」，含 14 张原片与拍摄参数。</span>
+    <a href="/#latest">查看更新</a>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-head" id="site-head">
+  <div class="head-inner">
+    <a class="brand" href="/#top" aria-label="返回首页顶部">
+      <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#5b2d5e"/>
+        <path d="M17 45c0-10 5-15 11-15 4 0 6 2 9 2 5 0 10 2 10 8 0 5-4 9-13 9H20c-2 0-3-1-3-4z" fill="#e7b2a0"/>
+        <circle cx="45" cy="21" r="7.5" fill="#f6dcc9"/>
+        <path d="M13 22l9-6 9 6" stroke="#ffd9b8" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+        <circle cx="45" cy="21" r="2.4" fill="#5b2d5e"/>
+      </svg>
+      <span>
+        <span class="brand-text">印象足拍摄影班花</span>
+        <span class="brand-sub">F O O T · P O R T R A I T</span>
+      </span>
+    </a>
+    <nav class="nav" id="main-nav" aria-label="主题导航">
+      <a href="/#overview">领域概览</a>
+      <a href="/#featured">精选推荐</a>
+      <a href="/#latest">最新更新</a>
+      <a href="/#cats">分类入口</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">体验指南</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#reviews">学员评论</a>
+    </nav>
+    <div class="head-tools">
+      <div class="search-wrap">
+        <svg class="search-ico" viewBox="0 0 24 24" fill="none" stroke="#7a6f84" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+        <input type="search" id="site-search" placeholder="搜课程、器材、姿势" aria-label="站内搜索">
+        <div class="search-feedback" id="search-feedback" role="status" aria-live="polite"></div>
+      </div>
+      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="main-nav">菜单</button>
+    </div>
+  </div>
+</header>
+
+<div id="top"></div>
+
+<!-- 首屏 -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-inner">
+    <div>
+      <span class="kicker">足部人像 · 课程 · 实拍复盘</span>
+      <h1 id="hero-title">印象足拍摄影班花</h1>
+      <p class="hero-lead">把镜头从面部往下移半米。脚背弧线、脚踝骨点、趾节的分寸，都是人像里最容易被忽略的一段。这里拆解 <b>35mm 与 85mm 两种焦段下的足部构图</b>，讲清楚哪些姿势能落地、哪些参数在现场真的用得上。</p>
+      <div class="hero-meta">
+        <span><i></i>课程共 12 讲，已更新 9 讲</span>
+        <span><i></i>学员实拍 386 组</span>
+        <span><i></i>最近更新 11 月 6 日</span>
+      </div>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="/#deep">读本周深度解析</a>
+        <a class="btn btn-ghost" href="/#guide">看拍摄流程</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>12</b><span>课程分讲</span></div>
+        <div><b>386</b><span>组实拍原片</span></div>
+        <div><b>24</b><span>条参数对照</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 460 380" role="img">
+        <defs>
+          <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#f6e8de"/>
+            <stop offset="1" stop-color="#efe0e6"/>
+          </linearGradient>
+          <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#f3d2bd"/>
+            <stop offset="1" stop-color="#e2ac93"/>
+          </linearGradient>
+          <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#d8b99e"/>
+            <stop offset="1" stop-color="#c19c7d"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="460" height="380" rx="22" fill="url(#bg1)"/>
+        <rect x="0" y="268" width="460" height="112" fill="url(#floor)"/>
+        <path d="M0 268h460" stroke="#a98464" stroke-width="2" opacity=".5"/>
+        <ellipse cx="240" cy="318" rx="150" ry="18" fill="#8f6a4c" opacity=".22"/>
+        <path d="M198 92c-6 42-14 74-30 108-9 19-6 32 10 38 30 11 66 12 96 4 18-5 22-16 14-33-14-30-22-64-26-104-1-14-8-22-32-22-22 0-30 6-32 9z" fill="url(#skin)"/>
+        <path d="M152 214c-6 2-9 7-6 12 3 4 10 4 15 1l16-8c9-4 12-11 7-16-4-4-11-2-16 2l-16 9z" fill="#efc6ad"/>
+        <path d="M310 224c8 1 14-2 15-7 1-6-6-10-14-11l-20-2c-10-1-16 3-16 9 0 5 6 8 15 9l20 2z" fill="#efc6ad"/>
+        <path d="M176 262c0-6 7-9 15-9h24c8 0 14 4 14 9s-6 8-14 8h-24c-8 0-15-2-15-8z" fill="#e9bfa5"/>
+        <circle cx="368" cy="84" r="34" fill="#fff" opacity=".55"/>
+        <path d="M348 84h40M368 64v40" stroke="#c98f68" stroke-width="2" opacity=".55"/>
+        <path d="M78 108l26-16 26 16" stroke="#8e4a63" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <rect x="94" y="120" width="20" height="26" rx="5" fill="#8e4a63" opacity=".8"/>
+        <g stroke="#8e4a63" stroke-width="2" opacity=".45" fill="none">
+          <path d="M46 300h368"/>
+        </g>
+      </svg>
+      <div class="art-badge a"><b>35mm · f/2.8</b>木地板低位平视</div>
+      <div class="art-badge b"><b>85mm · f/1.8</b>窗边侧逆光</div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="layout">
+
+    <!-- 主内容 -->
+    <main class="main-col">
+
+      <!-- 领域概览 -->
+      <section class="block" id="overview" aria-labelledby="ov-h">
+        <div class="block-head">
+          <h2 id="ov-h">领域概览<small>先弄清楚拍到的是什么</small></h2>
+        </div>
+        <p class="lead-note">足部人像在写真里通常只占 1/6 画面，却决定整组照片「像不像真实的人」。下面三块说明常见做法、成本区间与主要争议点。</p>
+        <div class="overview-grid" style="margin-top:16px">
+          <article class="ov-card">
+            <span class="num">01 / 类型</span>
+            <h3>足部特写与全身带脚</h3>
+            <p>前者以脚踝到趾尖为主，画面占比 60% 以上；后者保留小腿和地面关系。婚嫁写真多用后者，私房与静物风偏爱前者。</p>
+          </article>
+          <article class="ov-card">
+            <span class="num">02 / 成本</span>
+            <h3>一次棚拍的真实开销</h3>
+            <p>2 小时棚租 280—420 元，化妆 200 元起，袜品与地面道具多数自备。租 100mm 微距镜头一天约 120 元，比买划算。</p>
+          </article>
+          <article class="ov-card">
+            <span class="num">03 / 争议</span>
+            <h3>后期磨皮要不要保留骨点</h3>
+            <p>脚踝内外踝、趾关节的明暗关系一旦抹平，脚会显肿。多数从业者主张只去颈纹与疤，不动骨点阴影。</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 精选推荐 -->
+      <section class="block" id="featured" aria-labelledby="ft-h">
+        <div class="block-head">
+          <h2 id="ft-h">精选内容推荐<small>本周挑出的四份可复用资料</small></h2>
+          <a class="more-link" href="/#latest">全部更新 ›</a>
+        </div>
+        <div class="featured">
+          <article class="feat-main">
+            <img src="https://picsum.photos/seed/footportrait-woodfloor/760/430" width="760" height="430" loading="lazy" alt="木地板上低位平拍的足部特写，模特脚背朝向窗户侧光" style="object-fit:cover">
+            <div class="feat-body">
+              <div class="tagline">本周主打 · 实拍复盘</div>
+              <h3>午后木地板 35mm 实拍复盘：14 张原片与参数</h3>
+              <p>11 月 6 日拍摄，窗边自然光，ISO 400、f/2.8、1/160s。共拍 97 张，留 14 张。复盘记录了三次机位调整的原因：第一次俯拍地面反光过曝，第二次改低位后脚踝被前景遮挡，第三次退到 1.2 米外才把脚背弧线完整收进画面。</p>
+              <div class="feat-mini" style="border:0;box-shadow:none;padding:14px 0 0;background:transparent">
+                <p style="font-size:13px;color:var(--muted)">关联长尾：木地板足部俯拍参数 · 自然光低位构图 · 脚背弧线取景</p>
+              </div>
+            </div>
+          </article>
+          <div class="feat-side">
+            <article class="feat-mini">
+              <span class="pill">姿势</span>
+              <h3 style="margin-top:8px">脚趾并拢与自然分开的差别</h3>
+              <p>并拢显线条紧，分开显放松。婚纱样片九成选并拢加脚尖绷直，日常风反而要留一点松弛。</p>
+              <div class="meta"><span>10 月 29 日</span><span>可试拍 6 组</span></div>
+            </article>
+            <article class="feat-mini">
+              <span class="pill">器材</span>
+              <h3 style="margin-top:8px">85mm 拍脚为什么容易糊</h3>
+              <p>焦距长、工作距离 1.8 米以上，手持 1/125s 以下很容易因呼吸抖动失焦，建议上独脚架。</p>
+              <div class="meta"><span>11 月 2 日</span><span>参数表 8 行</span></div>
+            </article>
+            <article class="feat-mini">
+              <span class="pill">后期</span>
+              <h3 style="margin-top:8px">肤色统一时如何保住脚踝骨点</h3>
+              <p>用曲线提亮中间调，蒙版避开内外踝，比整体磨皮更稳。附带 Lightroom 调整顺序。</p>
+              <div class="meta"><span>10 月 31 日</span><span>截图 5 张</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 最新更新 -->
+      <section class="block" id="latest" aria-labelledby="lt-h">
+        <div class="block-head">
+          <h2 id="lt-h">最新更新<small>按发布时间倒序</small></h2>
+        </div>
+        <div class="update-list">
+          <article class="update-item">
+            <time datetime="2026-11-06">11 月 6 日</time>
+            <div>
+              <h3>午后木地板 35mm 实拍复盘上线</h3>
+              <p>14 张原片、三处机位调整记录、一组失败样张对照。</p>
+            </div>
+            <span class="kind">实拍复盘</span>
+          </article>
+          <article class="update-item">
+            <time datetime="2026-11-05">11 月 5 日</time>
+            <div>
+              <h3>「脚背高光控制」第 9 讲更新</h3>
+              <p>补充了阴天与逆光两种光位下的减曝光补偿建议，-0.3EV 到 -0.7EV。</p>
+            </div>
+            <span class="kind">课程</span>
+          </article>
+          <article class="update-item">
+            <time datetime="2026-11-03">11 月 3 日</time>
+            <div>
+              <h3>学员 @林屿 提交 26 张私房风足部特写</h3>
+              <p>点评指出前 8 张前景虚化过重，主体不够明确，已给出裁切与光圈建议。</p>
+            </div>
+            <span class="kind">作品点评</span>
+          </article>
+          <article class="update-item">
+            <time datetime="2026-10-30">10 月 30 日</time>
+            <div>
+              <h3>器材清单新增索尼 90mm f/2.8 微距长期使用记录</h3>
+              <p>连续使用 40 天，对焦行程与最近工作距离 28cm 的实际表现。</p>
+            </div>
+            <span class="kind">器材</span>
+          </article>
+          <article class="update-item">
+            <time datetime="2026-10-27">10 月 27 日</time>
+            <div>
+              <h3>「班花写真」企划第二季开放报名</h3>
+              <p>限 12 人，拍摄地点为旧厂房与校园走廊，每人 45 分钟一对一带拍。</p>
+            </div>
+            <span class="kind">企划</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- 分类入口 -->
+      <section class="block" id="cats" aria-labelledby="ct-h">
+        <div class="block-head">
+          <h2 id="ct-h">分类入口<small>按内容形态进入</small></h2>
+        </div>
+        <div class="cat-index">
+          <a href="/#guide">足部人像构图<em>18 篇</em></a>
+          <a href="/#deep">脚背弧线用光<em>11 篇</em></a>
+          <a href="/#featured">班花写真企划<em>9 组</em></a>
+          <a href="/#latest">35mm 实拍复盘<em>7 篇</em></a>
+          <a href="/#losangeles">85mm 长焦拍脚<em>6 篇</em></a>
+          <a href="/#guide">脚趾姿势引导<em>12 条</em></a>
+          <a href="/#guide">脚踝骨点后期<em>5 篇</em></a>
+          <a href="/#guide">袜品与地面道具<em>14 项</em></a>
+          <a href="/#reviews">学员作品点评<em>64 条</em></a>
+          <a href="/#faq">新手器材问答<em>10 问</em></a>
+          <a href="/#featured">窗边自然光方案<em>8 篇</em></a>
+          <a href="/#news">行业展览与征集<em>4 条</em></a>
+        </div>
+      </section>
+
+      <!-- 深度解析（唯一主体阅读区） -->
+      <section class="block" id="deep" aria-labelledby="dp-h">
+        <div class="article">
+          <div class="a-kicker">深度解析 · 本周判断</div>
+          <h2 id="dp-h">拍到第 97 张才满意的脚，问题多半不在参数</h2>
+          <div class="a-meta">
+            <span>更新于 2026 年 11 月 7 日</span>
+            <span>阅读约 9 分钟</span>
+            <span>涉及：机位、光位、焦段、姿势</span>
+          </div>
+
+          <p>11 月 6 日下午两点半，南向窗边，80cm 高矮凳，模特坐在凳沿。现场自然光从右侧 45 度涌入，地面是哑光木地板，色温约 5200K。这次拍了 97 张，最后只留 14 张。留下来的片子，参数彼此接近，差别几乎全在机位高度和脚尖朝向。</p>
+
+          <h3>一、低位平视比俯拍更稳，但前提是退够距离</h3>
+          <p>第一次机位在 30cm 高、距脚 60cm，用意是拍脚背弧线。结果前景的膝部阴影压进画面左下角，脚背高光过曝一处。把相机抬到 45cm、后退到 1.2 米，用 35mm 收进小腿与地板接缝，画面才站得住。这里能核对的结构是：<b>机位高度每抬 15cm，可视脚背面积增加约 1/5，但膝部入画概率也同步上升</b>。想两边都要，退距离比抬高度更有效。</p>
+
+          <div class="judge-box">
+            <h4>可核对的三条现场记录</h4>
+            <ol>
+              <li>16:02 至 16:11，光线从右侧 45 度转为 30 度，脚背亮部下降约 0.4 挡。</li>
+              <li>17 张废片里有 11 张是脚尖朝向窗，脚背出现条状硬阴影。</li>
+              <li>1/160s 下连续 20 张，5 张因呼吸抖动失焦，改用 1/250s 后降至 1 张。</li>
+            </ol>
+          </div>
+
+          <h3>二、85mm 并非更适合特写，工作距离是第一约束</h3>
+          <p>很多教程说长焦压缩感更好，适合脚部特写。实际在现场，85mm 要拍到同等画幅占比，工作距离约 1.8—2.2 米。房间进深不足时，身体后仰会带来俯角，反而破坏平视。35mm 在 1.2 米就能完成，代价是边缘有轻微透视拉伸，脚趾会显长一点。</p>
+          <table class="cmp-table">
+            <caption style="text-align:left;font-size:13px;color:var(--muted);padding-bottom:8px">同一模特、同一光位下的焦段对照（2026 年 11 月 6 日实测）</caption>
+            <thead>
+              <tr><th>项目</th><th>35mm f/2.8</th><th>85mm f/1.8</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>工作距离</td><td>1.2 米</td><td>1.8—2.2 米</td></tr>
+              <tr><td>安全快门（手持）</td><td>1/160s</td><td>1/250s</td></tr>
+              <tr><td>边缘形变</td><td>脚趾略长</td><td>几乎无</td></tr>
+              <tr><td>空间要求</td><td>普通卧室可用</td><td>需 4 米以上进深</td></tr>
+            </tbody>
+          </table>
+          <p>结论可以反驳：如果拍摄空间只有 3 米，85mm 的优势兑现不了，硬上不如换 50mm。这个判断的边界是空间，不是镜头素质。</p>
+
+          <h3>三、姿势引导里，脚趾分开与并拢不是审美问题</h3>
+          <p>10 月 29 日那组对照，同一模特、同一天、同机位，只改脚趾状态。并拢 6 张、自然分开 6 张。并拢时脚背线条连续，但第二、三趾根部会出现挤压阴影；分开时阴影消失，脚掌显宽约 8%。婚纱与礼服类样片偏好并拢，日常与私房偏好分开。这不是风格偏好，是阴影与比例的取舍。</p>
+
+          <blockquote class="quote">
+            「第一次拍脚，最怕的是模特不知道脚往哪放。后来我改成先让她站起来走两步再坐回去，脚的状态自然就对了。」
+            <cite>—— 学员 @苏晚，2026 年 10 月 24 日课后交流</cite>
+          </blockquote>
+
+          <p>另一处需要区分的是「磨皮不去骨点」这个说法。事实层面：10 月 31 日的后期流程里，内外踝的明暗对比保留在 30% 以上。转述层面：有学员反馈客户更想要「干净一点」的脚。推测层面：审美分歧可能来自客户看的是手机小图，缩小后骨点反而像脏点。三种说法混在一起谈，容易把技术问题谈成审美争吵。</p>
+
+          <h3>四、留下的 14 张，共同点只有一个</h3>
+          <p>回看这 14 张，参数并不统一，f/2.8 到 f/4 都有。共同点是脚背高光落在中间调偏上、没有死白，脚踝阴影里仍能看出骨点。换句话说，<b>决定成败的是高光与阴影的可读性，不是某组固定参数</b>。这条判断可以用任何一次实拍去验证：把照片缩到手机尺寸，如果脚背还是一片亮白，那组片子基本留不下来。</p>
+        </div>
+      </section>
+
+      <!-- 体验指南 -->
+      <section class="block" id="guide" aria-labelledby="gd-h">
+        <div class="block-head">
+          <h2 id="gd-h">体验指南<small>从到场到收工的五步</small></h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <h3>到场先看地面反光</h3>
+            <p>哑光木地板与瓷砖差别很大。瓷砖在 f/2.8 下会映出窗户轮廓，需垫一块 1.5×1 米的亚麻布。亚麻布在 11 月的干燥室内容易起褶，提前半小时铺。</p>
+            <div class="spec">建议：布面离脚 20cm，避免踩出折痕</div>
+          </div>
+          <div class="step">
+            <h3>定机位高度与距离</h3>
+            <p>35mm 用 45cm 高、1.2 米距；室内进深不足 3 米时改用 50mm，工作距离压到 1.5 米。机位高度用卷尺量，凭感觉容易偏高。</p>
+            <div class="spec">参考：相机中心对齐脚踝骨点略上方</div>
+          </div>
+          <div class="step">
+            <h3>先拍六张姿势对照</h3>
+            <p>并拢、自然分开、单脚点地各两张。每组间隔 30 秒，让模特自己调整。对照拍完再挑一个方向深入，比一开始就追求「对的那张」省时间。</p>
+            <div class="spec">用时约 12 分钟</div>
+          </div>
+          <div class="step">
+            <h3>控制高光不死白</h3>
+            <p>逆光或侧逆光时减 0.3—0.7EV，看直方图右端。脚背是全身最容易过曝的部位之一，宁可稍暗后期提亮。</p>
+            <div class="spec">ISO 400、f/2.8、1/250s 作为起点</div>
+          </div>
+          <div class="step">
+            <h3>当场粗筛，别把废片带回家</h3>
+            <p>每拍完一组回看一次，删掉抖动与构图重复的。这次 97 张当场删了 41 张，回家只剩 56 张要挑。</p>
+            <div class="spec">筛选标准：脚背高光可读、骨点在</div>
+          </div>
+        </div>
+
+        <div class="pair" style="margin-top:20px">
+          <div class="panel do">
+            <h3>✔ 建议保留</h3>
+            <ul>
+              <li>窗边侧光，脚背有柔和过渡</li>
+              <li>地板接缝作为横向参照线</li>
+              <li>脚踝内外踝明暗对比清楚</li>
+              <li>趾尖朝向与画面方向一致</li>
+            </ul>
+          </div>
+          <div class="panel dont">
+            <h3>✘ 尽量避开</h3>
+            <ul>
+              <li>顶光直射，脚背出现硬白块</li>
+              <li>俯拍超过 30 度，脚显短</li>
+              <li>前景杂物压住脚踝轮廓</li>
+              <li>磨皮抹平骨点，脚显肿</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="block" id="faq" aria-labelledby="fq-h">
+        <div class="block-head">
+          <h2 id="fq-h">常见问题<small>新手问得最多的十条中的六条</small></h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>足部人像一定要用微距镜头吗？</summary>
+            <div class="ans">不一定。脚部特写要的是细节与比例，不是 1:1 放大倍率。35mm 或 50mm 在 1.2—1.5 米工作距离下已经能拍满画面，微距镜头的优势在趾甲与皮肤纹理。索尼 90mm f/2.8 最近工作距离 28cm，适合拍脚趾局部，但拍整只脚反而要退很远。</div>
+          </details>
+          <details>
+            <summary>脚背高光总是过曝，怎么调？</summary>
+            <div class="ans">先减曝光补偿，-0.3EV 到 -0.7EV 逐档试，看直方图右端不贴边。若光比仍然大，用一块白布或柔光板挡在光源与脚之间，把硬光变柔。ISO 400、f/2.8、1/250s 是这次实拍的起点，可以照着试一组。</div>
+          </details>
+          <details>
+            <summary>班花写真企划的拍摄流程是怎样的？</summary>
+            <div class="ans">报名后先选场地与服装，拍摄当天每人 45 分钟，前一晚确认袜品与鞋。现场先拍全身带脚六张确定光位，再进入足部特写。拍完当场粗筛，两周内出一版修图，企划第二季共 12 个名额，10 月 27 日开放报名。</div>
+          </details>
+          <details>
+            <summary>后期磨皮要不要保留脚踝骨点？</summary>
+            <div class="ans">多数情况下要保留。内外踝的明暗对比一旦抹平，脚会显肿、显短。做法是用曲线提亮中间调，用蒙版避开骨点区域，再单独处理趾关节的暗部。整体磨皮只去死皮与疤痕，不动结构阴影。</div>
+          </details>
+          <details>
+            <summary>35mm 和 85mm 拍脚，哪个更适合新手？</summary>
+            <div class="ans">空间有限时选 35mm。85mm 要 1.8—2.2 米工作距离，房间进深不足会逼出俯角，反而破坏平视。35mm 在 1.2 米可完成，代价是脚趾略拉长。若场地有 4 米进深，85mm 的压缩感确实更干净。</div>
+          </details>
+          <details>
+            <summary>为什么拍脚还要在意脚趾朝向？</summary>
+            <div class="ans">脚趾朝向决定脚背受光面。11 月 6 日那组里，17 张废片有 11 张是脚尖朝向窗，脚背出现条状硬阴影。把脚转向侧光 30 度，阴影变柔，脚背弧线也能显出来，改动只在一句话的引导。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 用户评论 -->
+      <section class="block" id="reviews" aria-labelledby="rv-h">
+        <div class="block-head">
+          <h2 id="rv-h">学员评论<small>含中性反馈与吐槽</small></h2>
+        </div>
+        <div class="comments">
+          <article class="cmt">
+            <div class="cmt-head">
+              <span class="avatar" style="background:#8e4a63">林</span>
+              <span class="cmt-name">@林屿</span>
+              <span class="cmt-tag">私房风</span>
+              <span class="cmt-stars">★★★★☆</span>
+            </div>
+            <p>「午后木地板」那组复盘对机位高度的记录很实用，我照着 45cm、1.2 米试了一次，膝部阴影果然不再压画面。缺点是没有讲清楚阴天怎么办，我这边连续两天没太阳。</p>
+            <div class="ref">指向条目：午后木地板 35mm 实拍复盘</div>
+          </article>
+          <article class="cmt">
+            <div class="cmt-head">
+              <span class="avatar" style="background:#5b2d5e">苏</span>
+              <span class="cmt-name">@苏晚</span>
+              <span class="cmt-tag">婚纱样片</span>
+              <span class="cmt-stars">★★★★★</span>
+            </div>
+            <p>脚趾并拢那 6 张对照帮了大忙。以前客户说脚显胖，我只会磨皮，现在知道是第二、三趾根部的挤压阴影。改成自然分开再补一张并拢，客户自己就选了后者。</p>
+            <div class="ref">指向条目：脚趾并拢与自然分开的差别</div>
+          </article>
+          <article class="cmt">
+            <div class="cmt-head">
+              <span class="avatar" style="background:#a2603b">陈</span>
+              <span class="cmt-name">@陈不开</span>
+              <span class="cmt-tag">器材党</span>
+              <span class="cmt-stars">★★★☆☆</span>
+            </div>
+            <p>85mm 那篇说手持 1/125s 容易糊，我认一半。机身防抖开着的话 1/80s 也能出片，作者可能没算这层。不过上独脚架的建议没错，拍一下午肩膀确实轻松很多。</p>
+            <div class="ref">指向条目：85mm 拍脚为什么容易糊</div>
+          </article>
+          <article class="cmt">
+            <div class="cmt-head">
+              <span class="avatar" style="background:#3f7457">何</span>
+              <span class="cmt-name">@何叶</span>
+              <span class="cmt-tag">新手</span>
+              <span class="cmt-stars">★★★★☆</span>
+            </div>
+            <p>步骤写得细，就是亚麻布那节让我多花了 80 块，家里根本没合适的布，铺上去还起褶。后来换了个便宜的棉麻混纺，反而更贴地。</p>
+            <div class="ref">指向条目：到场先看地面反光</div>
+          </article>
+          <article class="cmt">
+            <div class="cmt-head">
+              <span class="avatar" style="background:#7a6f84">周</span>
+              <span class="cmt-name">@周野</span>
+              <span class="cmt-tag">中性</span>
+              <span class="cmt-stars">★★★☆☆</span>
+            </div>
+            <p>深度解析最后那条「看手机小图」的判断我不太认同。客户看的是打印样册，骨点在该有。审美分歧可能是沟通问题，不一定跟看图尺寸有关。</p>
+            <div class="ref">指向条目：深度解析「高光与阴影的可读性」</div>
+          </article>
+          <article class="cmt">
+            <div class="cmt-head">
+              <span class="avatar" style="background:#8e4a63">雪</span>
+              <span class="cmt-name">@雪见</span>
+              <span class="cmt-tag">企划学员</span>
+              <span class="cmt-stars">★★★★★</span>
+            </div>
+            <p>第二季报了名，45 分钟一对一比想象中紧。现场先拍全身带脚六张定光位这个流程很顺，我回去也照做了。就是旧厂房那场地的地板是水泥的，反光跟木地板完全两回事。</p>
+            <div class="ref">指向条目：班花写真企划第二季</div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 相关资讯 -->
+      <section class="block" id="news" aria-labelledby="nw-h">
+        <div class="block-head">
+          <h2 id="nw-h">相关资讯<small>展览、征集与同行动态</small></h2>
+        </div>
+        <div class="news-grid">
+          <article class="news">
+            <div class="src">城市摄影周 · 官方公告</div>
+            <h3>「身体局部」主题展 11 月 14 日开展</h3>
+            <p>征集足部、手部、后颈等局部人像作品，每人限投 3 幅，11 月 10 日 24:00 截止。</p>
+            <div class="when">2026 年 11 月 14 日—11 月 28 日</div>
+          </article>
+          <article class="news">
+            <div class="src">摄影器材店 · 促销信息</div>
+            <h3>微距镜头租赁周内 8 折</h3>
+            <p>90mm 与 100mm 两支微距镜头参与，单日 96 元起，需提前两天预约。</p>
+            <div class="when">2026 年 11 月 3 日—11 月 9 日</div>
+          </article>
+          <article class="news">
+            <div class="src">学员群 · 11 月 1 日</div>
+            <h3>三人组队外拍活动定档 11 月 9 日</h3>
+            <p>地点旧厂房，集合 13:30，自带袜品与反光板，人数上限 9 人。</p>
+            <div class="when">2026 年 11 月 9 日</div>
+          </article>
+          <article class="news">
+            <div class="src">行业观察 · 摄影论坛</div>
+            <h3>足部特写题材投稿量同比上涨</h3>
+            <p>某摄影社区 10 月数据显示，局部人像投稿较去年同期增加约三成，器材以 50mm 定焦为主。</p>
+            <div class="when">2026 年 10 月 28 日</div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section class="block" id="reco" aria-labelledby="rc-h">
+        <div class="block-head">
+          <h2 id="rc-h">相关推荐<small>按长尾词归拢的入口</small></h2>
+        </div>
+        <div class="tags-reco">
+          <a href="/#deep">木地板足部俯拍参数</a>
+          <a href="/#guide">35mm 低位平视构图</a>
+          <a href="/#featured">脚背弧线取景练习</a>
+          <a href="/#guide">86 长焦拍脚防抖</a>
+          <a href="/#faq">脚踝骨点后期保留</a>
+          <a href="/#reviews">班花写真学员作品点评</a>
+          <a href="/#guide">脚趾姿势引导话术</a>
+          <a href="/#news">局部人像主题展投稿</a>
+          <a href="/#latest">窗边自然光实拍复盘</a>
+          <a href="/#faq">足部特写器材清单</a>
+        </div>
+      </section>
+
+      <!-- 补充板块：时间线 -->
+      <section class="block" id="losangeles" aria-labelledby="tl-h">
+        <div class="block-head">
+          <h2 id="tl-h">课程进度时间线<small>12 讲已更新 9 讲</small></h2>
+        </div>
+        <div class="timeline">
+          <div class="tl-item">
+            <span class="date">10 月 27 日</span>
+            <h3>第 8 讲：脚踝骨点的明暗关系</h3>
+            <p>讲了内外踝的高光位置，附 4 张不同光位对照。</p>
+          </div>
+          <div class="tl-item">
+            <span class="date">11 月 2 日</span>
+            <h3>第 9 讲：脚背高光控制</h3>
+            <p>阴天与逆光两种光位的曝光补偿建议，-0.3EV 到 -0.7EV。</p>
+          </div>
+          <div class="tl-item">
+            <span class="date">11 月 5 日</span>
+            <h3>第 9 讲补充更新</h3>
+            <p>增加一张过曝废片与一张正确曝光的并排图。</p>
+          </div>
+          <div class="tl-item">
+            <span class="date">11 月 12 日（计划）</span>
+            <h3>第 10 讲：趾甲与皮肤纹理的呈现</h3>
+            <p>微距镜头与近摄接圈的差别，预计 11 月 12 日上线。</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 侧栏 -->
+    <aside class="side-col" aria-label="侧栏辅助信息">
+      <div class="side-card">
+        <h3>栏目导航</h3>
+        <nav class="side-nav" id="side-nav" aria-label="侧栏锚点导航">
+          <a href="/#overview">领域概览</a>
+          <a href="/#featured">精选内容推荐</a>
+          <a href="/#latest">最新更新</a>
+          <a href="/#cats">分类入口</a>
+          <a href="/#deep">深度解析</a>
+          <a href="/#guide">体验指南</a>
+          <a href="/#faq">常见问题</a>
+          <a href="/#reviews">学员评论</a>
+          <a href="/#news">相关资讯</a>
+          <a href="/#losangeles">课程进度</a>
+        </nav>
+      </div>
+
+      <div class="side-card">
+        <h3>本月数字</h3>
+        <div class="mini-stat"><span>实拍原片</span><b>386 组</b></div>
+        <div class="mini-stat"><span>点评条目</span><b>64 条</b></div>
+        <div class="mini-stat"><span>课程分讲</span><b>9 / 12</b></div>
+        <div class="mini-stat"><span>器材记录</span><b>40 天</b></div>
+      </div>
+
+      <div class="side-card">
+        <h3>热问入口</h3>
+        <ul class="side-list">
+          <li><a href="/#faq">足部人像一定要用微距镜头吗</a></li>
+          <li><a href="/#faq">脚背高光总是过曝怎么调</a></li>
+          <li><a href="/#guide">35mm 低位平视构图</a></li>
+          <li><a href="/#reviews">班花写真企划学员反馈</a></li>
+        </ul>
+      </div>
+
+      <div class="side-card">
+        <h3>更新日历</h3>
+        <ul class="side-list">
+          <li>11 月 6 日 · 实拍复盘上线</li>
+          <li>11 月 5 日 · 第 9 讲补充</li>
+          <li>11 月 3 日 · 学员作品点评</li>
+          <li>10 月 30 日 · 器材记录</li>
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<!-- 页尾 -->
+<footer class="site-foot" id="footer">
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <span class="brand-text">印象足拍摄影班花</span>
+        <p>把镜头对准脚背、脚踝与趾节，讲清楚每一次快门为什么成立。</p>
+      </div>
+      <div class="foot-col">
+        <h4>内容栏目</h4>
+        <a href="/#overview">领域概览</a>
+        <a href="/#featured">精选推荐</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+      </div>
+      <div class="foot-col">
+        <h4>互动栏目</h4>
+        <a href="/#faq">常见问题</a>
+        <a href="/#reviews">学员评论</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#news">相关资讯</a>
+      </div>
+      <div class="foot-col">
+        <h4>资料与说明</h4>
+        <a href="/#cats">分类入口</a>
+        <a href="/#reco">相关推荐</a>
+        <a href="/#losangeles">课程进度</a>
+        <a href="/#featured">器材记录</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>
+        <span>页脚更新时间 2026 年 11 月 7 日</span>
+        <span>对应正文更新项：11 月 6 日实拍复盘</span>
+      </div>
+      <div>
+        <span>页面内课程、学员数、参数与照片均为示例数据</span>
+        <span>© 2026 印象足拍摄影班花</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="to-top" aria-label="回到顶部" title="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* -------- 移动端菜单 -------- */
+  var menuBtn = document.getElementById('menu-btn');
+  var nav = document.getElementById('main-nav');
+  if (menuBtn && nav) {
+    menuBtn.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menuBtn.textContent = open ? '收起' : '菜单';
+    });
+    nav.addEventListener('click', function(e){
+      if (e.target.tagName === 'A' && window.innerWidth <= 760) {
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+        menuBtn.textContent = '菜单';
+      }
+    });
+  }
+
+  /* -------- 搜索：本地查找 + 无结果反馈 -------- */
+  var input = document.getElementById('site-search');
+  var feedback = document.getElementById('search-feedback');
+  var main = document.querySelector('main');
+  if (input && feedback && main) {
+    var clearMarks = function(){
+      var marks = main.querySelectorAll('mark.hit');
+      for (var i = 0; i < marks.length; i++) {
+        var m = marks[i];
+        var parent = m.parentNode;
+        parent.replaceChild(document.createTextNode(m.textContent), m);
+        parent.normalize();
+      }
+    };
+
+    var doSearch = function(){
+      var q = input.value.trim();
+      clearMarks();
+      if (!q) { feedback.classList.remove('show'); feedback.textContent = ''; return; }
+      var walker = document.createTreeWalker(main, NodeFilter.SHOW_TEXT, {
+        acceptNode: function(node){
+          if (!node.parentNode) return NodeFilter.FILTER_REJECT;
+          var p = node.parentNode.nodeName;
+          if (p === 'SCRIPT' || p === 'STYLE' || p === 'MARK') return NodeFilter.FILTER_REJECT;
+          if (node.nodeValue.trim() === '') return NodeFilter.FILTER_REJECT;
+          return NodeFilter.FILTER_ACCEPT;
+        }
+      });
+      var nodes = [];
+      while (walker.nextNode()) nodes.push(walker.currentNode);
+
+      var hits = 0;
+      var first = null;
+      for (var i = 0; i < nodes.length; i++) {
+        var node = nodes[i];
+        var text = node.nodeValue;
+        var idx = text.toLowerCase().indexOf(q.toLowerCase());
+        if (idx === -1) continue;
+        hits++;
+        var range = document.createRange();
+        range.setStart(node, idx);
+        range.setEnd(node, idx + q.length);
+        try {
+          var mark = document.createElement('mark');
+          mark.className = 'hit';
+          range.surroundContents(mark);
+          if (!first) {
+            var sec = node.parentNode.closest('section, article, div');
+            first = sec ? sec.id || null : null;
+          }
+        } catch (err) { /* 跨节点时跳过 */ }
+      }
+
+      feedback.classList.add('show');
+      if (hits === 0) {
+        feedback.innerHTML = '未找到「<em>' + q.replace(/[<>&]/g, '') + '</em>」相关内容，可试试「脚背高光」「35mm」「班花写真」。';
+      } else {
+        feedback.innerHTML = '找到 ' + hits + ' 处匹配' + (first ? '，首个位于 <a href="/#' + first + '">此栏目</a>' : '') + '。';
+      }
+    };
+
+    var timer = null;
+    input.addEventListener('input', function(){
+      clearTimeout(timer);
+      timer = setTimeout(doSearch, 260);
+    });
+    input.addEventListener('keydown', function(e){
+      if (e.key === 'Enter') { e.preventDefault(); clearTimeout(timer); doSearch(); }
+      if (e.key === 'Escape') { input.value = ''; doSearch(); }
+    });
+    document.addEventListener('click', function(e){
+      if (!e.target.closest('.search-wrap')) feedback.classList.remove('show');
+    });
+  }
+
+  /* -------- 侧栏滚动高亮 -------- */
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#side-nav a'));
+  var targets = sideLinks.map(function(a){
+    var id = a.getAttribute('href').split('#')[1];
+    return document.getElementById(id);
+  }).filter(Boolean);
+
+  if ('IntersectionObserver' in window && targets.length) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          var id = entry.target.id;
+          sideLinks.forEach(function(a){
+            a.classList.toggle('active', a.getAttribute('href') === '/#' + id);
+          });
+        }
+      });
+    }, { rootMargin: '-120px 0px -60% 0px', threshold: 0 });
+    targets.forEach(function(t){ io.observe(t); });
+  }
+
+  /* -------- 回到顶部 -------- */
+  var toTop = document.getElementById('to-top');
+  if (toTop) {
+    var onScroll = function(){
+      if (window.scrollY > 500) { toTop.classList.add('show'); }
+      else { toTop.classList.remove('show'); }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    toTop.addEventListener('click', function(){
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  /* -------- 平滑滚动时补偿吸顶高度 -------- */
+  var head = document.getElementById('site-head');
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href^="/#"]');
+    if (!a) return;
+    var hash = a.getAttribute('href').split('#')[1];
+    if (!hash) return;
+    var target = document.getElementById(hash);
+    if (!target) return;
+    e.preventDefault();
+    var offset = (head ? head.getBoundingClientRect().height : 0) + 24;
+    var y = target.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+    if (history.replaceState) history.replaceState(null, '', '/#' + hash);
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "印象足拍摄影班花",
+  "description": "足部人像摄影课程、班花写真拍摄与作品点评指南，覆盖构图用光、姿势引导、器材参数与后期调色。",
+  "inLanguage": "zh-CN"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "足部人像一定要用微距镜头吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不一定。脚部特写要的是细节与比例，不是 1:1 放大倍率。35mm 或 50mm 在 1.2—1.5 米工作距离下已经能拍满画面，微距镜头的优势在趾甲与皮肤纹理。索尼 90mm f/2.8 最近工作距离 28cm，适合拍脚趾局部。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "脚背高光总是过曝，怎么调？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "先减曝光补偿，-0.3EV 到 -0.7EV 逐档试，看直方图右端不贴边。若光比仍然大，用白布或柔光板挡在光源与脚之间。ISO 400、f/2.8、1/250s 可作为起点。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "班花写真企划的拍摄流程是怎样的？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "报名后先选场地与服装，拍摄当天每人 45 分钟。现场先拍全身带脚六张确定光位，再进入足部特写，拍完当场粗筛，两周内出一版修图。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "后期磨皮要不要保留脚踝骨点？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "多数情况下要保留。内外踝的明暗对比一旦抹平，脚会显肿、显短。可用曲线提亮中间调，用蒙版避开骨点区域，再单独处理趾关节暗部。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "35mm 和 85mm 拍脚，哪个更适合新手？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "空间有限时选 35mm。85mm 要 1.8—2.2 米工作距离，房间进深不足会逼出俯角。35mm 在 1.2 米可完成，代价是脚趾略拉长。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "为什么拍脚还要在意脚趾朝向？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "脚趾朝向决定脚背受光面。11 月 6 日那组里，17 张废片有 11 张是脚尖朝向窗，脚背出现条状硬阴影。把脚转向侧光 30 度，阴影变柔，脚背弧线也能显出来。"
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+  </html>
